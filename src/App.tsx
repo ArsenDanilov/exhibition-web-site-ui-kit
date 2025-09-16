@@ -1,12 +1,14 @@
-import { Button } from "./components/ui/button"
+import { DesktopNavbar } from "./components/layout/navbar/DesktopNavbar"
+import { navbarData } from "./components/layout/navbar/navbar.data"
+// import { Button } from "./components/ui/button"
+
 
 function App() {
 
   return (
     <>
       <div>
-        <Button>Sign in</Button>
-        <Button variant="secondary">Register</Button>
+        <DesktopNavbar data={navbarData}/>
       </div>
     </>
   )
