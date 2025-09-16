@@ -4,9 +4,9 @@ function App() {
 
   return (
     <>
-      <div className="text-3xl font-bold underline">
-        Test Test Test
-        <Button>Life</Button>
+      <div>
+        <Button>Sign in</Button>
+        <Button variant="secondary">Register</Button>
       </div>
     </>
   )
