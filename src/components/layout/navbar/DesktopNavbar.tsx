@@ -1,4 +1,4 @@
-import { Button } from "../../ui/button";
+import { Button } from "../../ui/Button";
 import { Logo } from "../../ui/Logo";
 import type { INavbarData } from "./navbar.types";
 

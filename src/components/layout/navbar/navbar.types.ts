@@ -1,6 +1,11 @@
 interface INavbarData  {
     title: string,
-    href: string
+    href: string,
 }
 
-export type { INavbarData }
+interface IMobileMenuButtonProps {
+  isOpen: boolean;
+  onClick: () => void;
+}
+
+export type { INavbarData, IMobileMenuButtonProps }
