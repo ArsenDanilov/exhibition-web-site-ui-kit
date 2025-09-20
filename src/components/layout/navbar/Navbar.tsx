@@ -1,10 +1,10 @@
-import { useMediaQuery } from 'usehooks-ts'; // или свой хук
+import { useMediaQuery } from 'usehooks-ts';
 import { MobileNavbar } from './MobileNavbar';
 import { DesktopNavbar } from './DesktopNavbar';
 import { navbarData } from './navbar.data';
 
 export const Navbar = () => {
-    const isDesktop = useMediaQuery('(min-width: 768px)');
+    const isDesktop = useMediaQuery('(min-width: 880px)');
 
     return (
         <div>

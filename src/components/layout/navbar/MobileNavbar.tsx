@@ -1,14 +1,10 @@
 import { useState } from "react";
 import { Logo } from "../../ui/Logo";
-import {
-  Sheet,
-  SheetContent,
-  SheetTrigger,
-  SheetOverlay,
-} from "../../ui/sheet";
+import { Sheet, SheetContent, SheetTrigger, SheetOverlay } from "../../ui/sheet";
 import { MobileMenuButton } from "./MobileMenuButton";
 import type { INavbarData } from "./navbar.types";
 import { Button } from "../../ui/Button";
+import navbarMenuArrow from "../../../../public/navbarMenuArrow.svg"
 
 export const MobileNavbar = ({ data }: { data: INavbarData[] }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,19 +19,15 @@ export const MobileNavbar = ({ data }: { data: INavbarData[] }) => {
           </SheetTrigger>
         </div>
         <SheetOverlay className="bg-grey" />
-        <SheetContent
-          side="top"
-          className="rounded-xl py-1 mx-auto w-[calc(100vw-2*3rem)] px-2"
-        >
+        <SheetContent side="top" className="rounded-xl py-1 mx-auto w-[calc(100vw-2*3rem)] px-2">
           <div className="mb-5 bg-background rounded-2xl">
             {data.map((item) => (
               <a
                 key={item.href}
                 href={item.href}
-                className="w-full flex justify-between items-center px-4 py-3 text-blackblur hover:bg-gray-200 rounded-lg transition-colors"
-              >
+                className="w-full flex justify-between items-center px-4 py-3 text-blackblur hover:bg-gray-200 rounded-lg transition-colors">
                 {item.title}
-                <img src="@/../public/navbarMenuArrow.svg" alt="" />
+                <img src={navbarMenuArrow} alt="" />
               </a>
             ))}
           </div>
