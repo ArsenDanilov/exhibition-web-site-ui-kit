@@ -10,7 +10,7 @@ export const MobileNavbar = ({ data }: { data: INavbarData[] }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="px-7">
+    <nav className="desktop:hidden">
       <Sheet open={isOpen} onOpenChange={setIsOpen}>
         <div className="flex items-center justify-between px-7 py-5 rounded-b-3xl mb-9">
           <Logo />

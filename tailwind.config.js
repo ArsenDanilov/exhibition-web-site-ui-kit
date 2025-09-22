@@ -8,16 +8,16 @@ export default {
         sans: ["Montserrat", "system-ui", "sans-serif"],
       },
       fontSize: {
-        base: ["14px", { lineHeight: "1.5" }], 
+        base: ["14px", { lineHeight: "1.5" }],
       },
       fontWeight: {
         medium: "500",
       },
-	  lineHeight: {
-        '10.7': '1.07',
+      lineHeight: {
+        10.7: "1.07",
       },
       letterSpacing: {
-        '-2%': '-0.02em',
+        "-2%": "-0.02em",
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -68,6 +68,9 @@ export default {
           4: "hsl(var(--chart-4))",
           5: "hsl(var(--chart-5))",
         },
+      },
+      screens: {
+        desktop: "880px",
       },
     },
   },
