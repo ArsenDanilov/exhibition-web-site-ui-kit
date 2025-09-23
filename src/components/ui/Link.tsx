@@ -1,7 +1,7 @@
 import { memo } from "react"
 
 interface LinkProps {
-    children: React.ReactNode,
+    children?: React.ReactNode,
     href: string, 
     className?: string
 }

@@ -1,4 +1,5 @@
 import { Button } from "../../ui/Button";
+import { Link } from "../../ui/Link";
 import { Logo } from "../../ui/Logo";
 import type { INavbarData } from "./navbar.types";
 
@@ -8,13 +9,7 @@ export const DesktopNavbar = ({ data }: { data: INavbarData[] }) => {
         <Logo />
         <div className="flex items-center gap-6">
           {data.map((item) => (
-            <a
-              key={item.href}
-              href={item.href}
-              className="text-blackblur hover:text-black"
-            >
-              {item.title}
-            </a>
+            <Link key={item.href} href={item.href} className="text-blackblur md:hover:text-black">{item.title}</Link>
           ))}
         </div>
         <div className="flex items-center justify-center gap-2">
