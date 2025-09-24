@@ -44,14 +44,14 @@ export const MobileNavbar = ({ data }: { data: INavbarData[] }) => {
           <div className="flex flex-col gap-2">
             <Button
               variant="default"
-              className="w-full bg-primary rounded-xl"
+              className="w-full"
               size="lg"
             >
               Sign In
             </Button>
             <Button
               variant="secondary"
-              className="w-full bg-secondary rounded-xl"
+              className="w-full"
               size="lg"
             >
               Register
