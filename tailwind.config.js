@@ -74,21 +74,12 @@ export default {
         },
       },
       screens: {
-        desktop: "880px",
-      },
-      keyframes: {
-        'slide-out-to-top': {
-          from: { transform: 'translateY(0)' },
-          to: { transform: 'translateY(-100%)' },
-        },
-        'slide-in-from-top': {
-          from: { transform: 'translateY(-100%)' },
-          to: { transform: 'translateY(0)' },
-        },
-      },
-      animation: {
-        'slide-out-to-top': 'slide-out-to-top 0.3s ease-in-out forwards',
-        'slide-in-from-top': 'slide-in-from-top 0.5s ease-in-out forwards',
+        sm: "576px",
+        md: "768px",
+        mdl: "834px",
+        lg: "992px",
+        xl: "1200px",
+        xxl: "1400px",
       },
     },
   },
