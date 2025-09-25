@@ -28,6 +28,7 @@ export default {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         black: "hsl(var(--black))",
+        black30: "hsl(var(--black-30))",
         blackblur: "hsl(var(--black-blur))",
         grey: "hsl(var(--grey))",
         card: {

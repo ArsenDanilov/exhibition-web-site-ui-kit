@@ -1,13 +1,11 @@
-import { About } from "../components/layout/about/About"
-// import { Navbar } from "../components/layout/navbar/Navbar"
+import { Footer } from "../components/layout/footer/Footer"
 
 function App() {
 
   return (
     <>
       <div>
-        <About></About>
-        {/* <Navbar /> */}
+        <Footer />
       </div>
     </>
   )
