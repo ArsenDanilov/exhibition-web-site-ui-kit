@@ -29,7 +29,7 @@ export default {
         foreground: "hsl(var(--foreground))",
         black: "hsl(var(--black))",
         black30: "hsl(var(--black-30))",
-        blackblur: "hsl(var(--black-blur))",
+        black70: "hsl(var(--black-70))",
         grey: "hsl(var(--grey))",
         card: {
           DEFAULT: "hsl(var(--card))",

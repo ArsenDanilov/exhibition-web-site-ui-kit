@@ -12,7 +12,7 @@ export const DesktopNavbar = ({ data }: { data: INavbarData[] }) => {
           <Link
             key={item.href}
             href={item.href}
-            className="text-blackblur md:hover:text-black"
+            className="text-black70 md:hover:text-black"
           >
             {item.title}
           </Link>
