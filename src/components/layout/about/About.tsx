@@ -6,7 +6,7 @@ import { AboutTitle } from "./AboutTitle";
 
 export const About = () => {
   return (
-    <section className="rounded-3xl lg:px-[40px] lg:py-[50px] bg-gray-400 flex gap-5">
+    <section className="rounded-3xl lg:px-[40px] lg:py-[50px] flex gap-5">
       <div className="flex-1">
         <AboutTitle>{aboutData.title}</AboutTitle>
         <Text tag="h1" textStyle="lg" className="mb-10 font-normal leading-6 tracking-normal w-3/4">
