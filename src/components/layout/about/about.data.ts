@@ -1,4 +1,4 @@
-import aboutBanner from "../../../../public/aboutBanner.jpg"
+import aboutBanner from "../../../assets/aboutBanner.jpg"
 
 import { type AboutData } from "./about.types";
 

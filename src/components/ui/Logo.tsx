@@ -1,4 +1,4 @@
-import logoSvg from '../../../public/wfconnect.svg';
+import wfConnectLogo  from '@/assets/wfconnect.svg'
 import { Image } from './Image';
 import { Link } from './Link';
 
@@ -6,7 +6,7 @@ export const Logo = () => {
     return (
         <div className="flex items-center">
             <Link href="/">
-                <Image src={logoSvg} alt="WorldFood Connect"/>
+                <Image src={wfConnectLogo} alt="WorldFood Connect"/>
             </Link>
         </div>
     )

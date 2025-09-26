@@ -9,7 +9,7 @@ import {
 import { MobileMenuButton } from "./MobileMenuButton";
 import type { INavbarData } from "./navbar.types";
 import { Button } from "../../ui/Button";
-import navbarMenuArrow from "../../../../public/navbarMenuArrow.svg";
+import navbarMenuArrow from "../../../assets/navbarMenuArrow.svg"
 import { Link } from "../../ui/Link";
 
 export const MobileNavbar = ({ data }: { data: INavbarData[] }) => {

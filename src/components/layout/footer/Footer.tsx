@@ -9,7 +9,7 @@ export const Footer = () => {
             <Logo />
             <div className="flex justify-center gap-5">
                 {footerData.map((item) => (
-                    <Link href={item.href}>
+                    <Link href={item.href} key={item.href}>
                         <Text textStyle="sm" className="text-black30">{item.title}</Text>
                     </Link>
                 ))}
