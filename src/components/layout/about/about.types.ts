@@ -6,5 +6,3 @@ export interface AboutData {
         alt: string
     }
 }
-
-export type AboutBannerProps = AboutData['banner']
