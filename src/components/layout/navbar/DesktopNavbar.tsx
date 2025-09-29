@@ -1,6 +1,6 @@
-import { Button } from "../../ui/Button";
-import { Link } from "../../ui/Link";
-import { Logo } from "../../ui/Logo";
+import { Button } from "@/components/ui/Button";
+import { Link } from "@/components/ui/Link";
+import { Logo } from "@/components//ui/Logo";
 import type { INavbarData } from "./navbar.types";
 
 export const DesktopNavbar = ({ data }: { data: INavbarData[] }) => {

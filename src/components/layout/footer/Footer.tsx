@@ -1,6 +1,6 @@
-import { Link } from "../../ui/Link"
-import { Logo } from "../../ui/Logo"
-import { Text } from "../../ui/Text"
+import { Link } from "@/components//ui/Link"
+import { Logo } from "@/components//ui/Logo"
+import { Text } from "@/components//ui/Text"
 import { footerData } from "./footer.data"
 
 export const Footer = () => {

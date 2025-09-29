@@ -1,6 +1,6 @@
-import closeMobileMenuButton from "../../../assets/closeMobileMenuButton.svg"
-import burgerButton from "../../../assets/burgerButton.svg"
-import { Image } from "../../ui/Image";
+import closeMobileMenuButton from "@/assets/closeMobileMenuButton.svg"
+import burgerButton from "@/assets/burgerButton.svg"
+import { Image } from "@/components/ui/Image";
 
 export const MobileMenuButton = ({ isOpen }: {isOpen: boolean}) => {
   return (

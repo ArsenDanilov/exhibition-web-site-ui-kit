@@ -1,7 +1,7 @@
-import { Button } from "../../ui/Button";
-import { Image } from "../../ui/Image";
-import { Text } from "../../ui/Text";
+import { Button } from "@/components/ui/Button";
+import { Image } from "@/components/ui/Image";
 import { joinData } from "./join.data";
+import { Text } from "@/components/ui/Text";
 import connectAppInterface_1 from "@/assets/connectAppInterface_1.png"
 import connectAppInterface_2 from "@/assets/connectAppInterface_2.png"
 import joinIcons from "@/assets/joinIcons.svg"

@@ -1,6 +1,6 @@
-import { Button } from "../../ui/Button";
-import { Image } from "../../ui/Image";
-import { Text } from "../../ui/Text";
+import { Button } from "@/components/ui/Button";
+import { Image } from "@/components/ui/Image";
+import { Text } from "@/components/ui/Text";
 import { aboutData } from "./about.data";
 
 export const About = () => {

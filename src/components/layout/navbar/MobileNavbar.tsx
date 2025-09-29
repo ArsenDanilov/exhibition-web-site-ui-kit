@@ -1,16 +1,16 @@
 import { useState } from "react";
-import { Logo } from "../../ui/Logo";
+import { Logo } from "@/components/ui/Logo";
 import {
   Sheet,
   SheetContent,
   SheetTrigger,
   SheetOverlay,
-} from "../../ui/sheet";
+} from "@/components/ui/sheet";
 import { MobileMenuButton } from "./MobileMenuButton";
 import type { INavbarData } from "./navbar.types";
-import { Button } from "../../ui/Button";
-import navbarMenuArrow from "../../../assets/navbarMenuArrow.svg"
-import { Link } from "../../ui/Link";
+import { Button } from "@/components/ui/Button";
+import navbarMenuArrow from "@/assets/navbarMenuArrow.svg"
+import { Link } from "@/components/ui/Link";
 
 export const MobileNavbar = ({ data }: { data: INavbarData[] }) => {
   const [isOpen, setIsOpen] = useState(false);
