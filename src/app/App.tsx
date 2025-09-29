@@ -1,13 +1,11 @@
-import { About } from "../components/layout/about/About"
-import { Footer } from "../components/layout/footer/Footer"
+import { Join } from "../components/layout/join/Join"
 
 function App() {
 
   return (
     <>
       <div>
-        <About />
-        <Footer />
+        <Join />
       </div>
     </>
   )
