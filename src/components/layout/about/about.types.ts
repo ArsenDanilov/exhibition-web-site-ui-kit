@@ -1,4 +1,4 @@
-export interface AboutData {
+export interface IAboutData {
     title: string,
     description: string,
     banner: {

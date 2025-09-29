@@ -1,6 +1,6 @@
-import { type FooterData } from "./footer.types"
+import { type IFooterData } from "./footer.types"
 
-export const footerData: FooterData[] = [
+export const footerData: IFooterData[] = [
     { title: "Правила пользования платформой", href: "/rules" },
     { title: "Политика использования данных", href: "/politics" },
 ]

@@ -1,4 +1,4 @@
-export interface JoinData {
+export interface IJoinData {
     title: string,
     description: string,
 }

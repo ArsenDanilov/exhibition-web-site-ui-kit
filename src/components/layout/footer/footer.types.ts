@@ -1,4 +1,4 @@
-export interface FooterData {
+export interface IFooterData {
     title: string,
     href: string,
 }
