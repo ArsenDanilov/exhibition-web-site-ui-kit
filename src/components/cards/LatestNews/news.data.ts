@@ -10,7 +10,7 @@ export interface INewsData {
     avatar: string,
     postedAt: string,
     text?: string,
-    images?: string | string[],
+    images?: string,
     likes: number,
     comments: number
 }
