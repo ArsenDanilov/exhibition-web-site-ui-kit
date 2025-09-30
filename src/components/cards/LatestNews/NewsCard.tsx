@@ -1,5 +1,5 @@
-import { Image } from "../../ui/Image";
-import { Text } from "../../ui/Text";
+import { Image } from "@/components/ui/Image";
+import { Text } from "@/components/ui/Text";
 import likeIcon from "@/assets/likeIcon.svg";
 import commentIcon from "@/assets/commentIcon.svg";
 import { type INewsData } from "./news.data";
