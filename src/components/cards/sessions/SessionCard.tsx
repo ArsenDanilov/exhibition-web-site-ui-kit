@@ -5,7 +5,7 @@ import { type ISessionsData } from "./sessions.data";
 
 export const SessionCard = ({ title, description, postedAt, tags }: ISessionsData) => {
     return (
-        <div className="px-4 py-5 bg-lightPink mb-5 rounded-2xl tracking-wide">
+        <div className="px-4 py-5 bg-lightPink mb-5 rounded-2xl">
             <Text className="font-semibold mb-2">{title}&nbsp;| <span className="font-normal">{formatPostTime(postedAt)}</span></Text>
             <Text className="mb-1">{description}</Text>
             <button className="text-primary mb-4 font-semibold">Show more</button>

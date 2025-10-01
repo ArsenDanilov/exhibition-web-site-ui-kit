@@ -4,6 +4,7 @@ import { Footer } from "@/components/layout/footer/Footer"
 import { Navbar } from "@/components/layout/navbar/Navbar"
 import { LatestNews } from "@/components/cards/latestNews/LatestNews"
 import { Sessions } from "@/components/cards/sessions/Sessions"
+import { Content } from "../components/cards/content/Content"
 
 function App() {
 
@@ -15,7 +16,8 @@ function App() {
         <Join />
         <Footer /> */}
         {/* <LatestNews /> */}
-        <Sessions />
+        {/* <Sessions /> */}
+        <Content  />
       </div>
     </>
   )
