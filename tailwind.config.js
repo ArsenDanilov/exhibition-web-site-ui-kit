@@ -33,6 +33,7 @@ export default {
         grey: "hsl(var(--grey))",
         darkGrey: "hsl(var(--dark-grey))",
         lightGrey: "hsl(var(--light-grey))",
+        lightPink: "hsl(var(--light-pink))",
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
