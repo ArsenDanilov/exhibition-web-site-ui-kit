@@ -16,8 +16,8 @@ function App() {
         <Join />
         <Footer /> */}
         {/* <LatestNews /> */}
-        {/* <Sessions /> */}
-        <Content  />
+        <Sessions />
+        {/* <Content  /> */}
       </div>
     </>
   )
