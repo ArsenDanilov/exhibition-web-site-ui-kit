@@ -8,7 +8,7 @@ export default {
         sans: ["Montserrat", "system-ui", "sans-serif"],
       },
       fontSize: {
-        base: ["14px", { lineHeight: "1.5" }],
+        base: ["16px", { lineHeight: "1.5" }],
       },
       fontWeight: {
         medium: "500",
@@ -32,6 +32,7 @@ export default {
         black70: "hsl(var(--black-70))",
         grey: "hsl(var(--grey))",
         darkGrey: "hsl(var(--dark-grey))",
+        lightGrey: "hsl(var(--light-grey))",
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",

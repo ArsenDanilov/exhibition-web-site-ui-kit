@@ -2,36 +2,9 @@ import { Button } from "@/components/ui/Button";
 import { Text } from "@/components/ui/Text";
 import { newsData } from "./news.data";
 import { NewsCard } from "./NewsCard";
+import { formatPostTime } from "../../../utils/formatPostTime";
 
 export const LatestNews = () => {
-
-  function formatPostTime(dateString: string): string {
-    const date = new Date(dateString);
-
-    const day = date.getUTCDate();
-    const month = date.getUTCMonth();
-    const hours = date.getUTCHours().toString().padStart(2, "0");
-    const minutes = date.getUTCMinutes().toString().padStart(2, "0");
-
-    const months = [
-      "января",
-      "февраля",
-      "марта",
-      "апреля",
-      "мая",
-      "июня",
-      "июля",
-      "августа",
-      "сентября",
-      "октября",
-      "ноября",
-      "декабря",
-    ];
-
-    const monthName = months[month];
-
-    return `${day} ${monthName} в ${hours}:${minutes}`;
-  }
 
   return (
     <section>
@@ -40,7 +13,7 @@ export const LatestNews = () => {
       </Text>
       <div>
         {newsData.map((item) => (
-            <NewsCard username={item.username} avatar={item.avatar} postedAt={formatPostTime(item.postedAt)} text={item.text} images={item.images} likes={item.likes} comments={item.comments}/>
+            <NewsCard key={item.postedAt} username={item.username} avatar={item.avatar} postedAt={formatPostTime(item.postedAt)} text={item.text} images={item.images} likes={item.likes} comments={item.comments}/>
         ))}
       </div>
       <Button className="w-full">Show more content</Button>
