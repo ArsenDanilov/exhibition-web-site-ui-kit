@@ -20,7 +20,8 @@ function App() {
         <Join />
         <Footer /> */}
         {/* <LatestNews /> */}
-        {/* <Sessions /> */}
+          <Navbar {...Navbar.schema.getDefaultProps()}/>
+          <Sessions />
         {/* <Content  /> */}
         {/* <Product /> */}
         {/* <Members /> */}
