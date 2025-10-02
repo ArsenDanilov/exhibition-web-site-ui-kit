@@ -28,6 +28,7 @@ export default {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         black: "hsl(var(--black))",
+        black12: "hsl(var(--black-12))",
         black30: "hsl(var(--black-30))",
         black70: "hsl(var(--black-70))",
         grey: "hsl(var(--grey))",
