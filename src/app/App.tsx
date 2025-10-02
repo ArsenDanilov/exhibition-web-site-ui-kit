@@ -8,6 +8,7 @@ import { Content } from "@/components/cards/content/Content";
 import { Product } from "@/components/cards/product/Product";
 import { Members } from "@/components/cards/members/Members";
 import { Companies } from "../components/cards/companies/Companies";
+import { PaidBanner } from "../components/cards/paidBanner/PaidBanner";
 
 function App() {
   return (
@@ -22,7 +23,8 @@ function App() {
         {/* <Content  /> */}
         {/* <Product /> */}
         {/* <Members /> */}
-        <Companies />
+        {/* <Companies /> */}
+        <PaidBanner />
       </div>
     </>
   );
