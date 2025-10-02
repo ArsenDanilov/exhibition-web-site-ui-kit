@@ -15,19 +15,8 @@ function App() {
   return (
     <>
       <div>
-        {/* <Navbar />
-        <About />
-        <Join />
-        <Footer /> */}
-        {/* <LatestNews /> */}
-          <Navbar {...Navbar.schema.getDefaultProps()}/>
-          <Sessions />
-        {/* <Content  /> */}
-        {/* <Product /> */}
-        {/* <Members /> */}
-        {/* <Companies /> */}
-        {/* <PaidBanner /> */}
-        <MainSection />
+          {/* <Navbar {...Navbar.schema.getDefaultProps()}/> */}
+          <Companies {...Companies.schema.getDefaultProps()} />
       </div>
     </>
   );
