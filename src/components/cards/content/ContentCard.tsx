@@ -1,8 +1,12 @@
 import { Text } from "@/components/ui/Text";
 import { Image } from "@/components/ui/Image";
-import { type IContentData } from "./content.data";
 import moreButton from "@/assets/moreButton.svg";
 
+export interface IContentData {
+  video: string;
+  videoTitle: string;
+  videoAlt?: string;
+}
 
 export const ContentCard = ({ video, videoTitle, videoAlt }: IContentData) => {
   return (

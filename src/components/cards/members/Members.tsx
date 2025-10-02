@@ -10,8 +10,9 @@ export const Members = () => {
         Members
       </Text>
       <div className="mb-5 grid grid-cols-3 grid-rows-2 gap-x-10 gap-y-4">
-        {membersData.map((item) => (
+        {membersData.map((item, index) => (
           <MemberCard
+            key={index}
             avatar={item.avatar}
             name={item.name}
             company={item.company}

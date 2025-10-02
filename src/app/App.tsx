@@ -7,6 +7,7 @@ import { Sessions } from "@/components/cards/sessions/Sessions";
 import { Content } from "@/components/cards/content/Content";
 import { Product } from "@/components/cards/product/Product";
 import { Members } from "@/components/cards/members/Members";
+import { Companies } from "../components/cards/companies/Companies";
 
 function App() {
   return (
@@ -20,7 +21,8 @@ function App() {
         {/* <Sessions /> */}
         {/* <Content  /> */}
         {/* <Product /> */}
-        <Members />
+        {/* <Members /> */}
+        <Companies />
       </div>
     </>
   );

@@ -1,12 +1,7 @@
 import video1 from "@/assets/content/video1.png";
 import video2 from "@/assets/content/video2.png";
 import video3 from "@/assets/content/video3.png";
-
-export interface IContentData {
-  video: string;
-  videoTitle: string;
-  videoAlt?: string;
-}
+import { type IContentData } from "./ContentCard";
 
 export const contentData: IContentData[] = [
   {
