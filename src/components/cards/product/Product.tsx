@@ -6,7 +6,7 @@ import { ProductCard } from "./ProductCard";
 export const Product = () => {
   return (
     <div className="px-7 py-5 rounded-3xl border border-black30">
-      <Text tag="h3" textStyle="3xl" className="mb-5 font-semibold">
+      <Text tag="h3" textStyle="2xl" className="mb-5 font-semibold">
         Product
       </Text>
       <div className="flex items-center gap-7 mb-5 justify-center">

@@ -2,13 +2,13 @@ import { Button } from "@/components/ui/Button";
 import { Text } from "@/components/ui/Text";
 import { newsData } from "./news.data";
 import { NewsCard } from "./NewsCard";
-import { formatPostTime } from "../../../utils/formatPostTime";
+import { formatPostTime } from "@/utils/formatPostTime";
 
 export const LatestNews = () => {
 
   return (
     <section>
-      <Text tag="h3" textStyle="3xl" className="text-3xl mb-5 font-semibold">
+      <Text tag="h3" textStyle="3xl" className="text-3xl mb-5 font-semibold w-[60%]">
         Latest News
       </Text>
       <div>

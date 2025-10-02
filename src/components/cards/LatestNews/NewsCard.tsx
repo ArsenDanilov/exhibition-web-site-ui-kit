@@ -17,7 +17,7 @@ export const NewsCard = ({
     <div className="px-4 py-5 rounded-3xl mb-5 border border-black30">
       <div className="flex gap-3 items-center mb-4">
         <div>
-          <Image src={avatar} alt="user avatar" />
+          <Image src={avatar} alt="user avatar" className="size-[50px]"/>
         </div>
         <div className="flex flex-col gap-2 justify-center">
           <Text textStyle="lg" className="font-bold">

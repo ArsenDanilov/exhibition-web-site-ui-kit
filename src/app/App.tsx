@@ -7,8 +7,9 @@ import { Sessions } from "@/components/cards/sessions/Sessions";
 import { Content } from "@/components/cards/content/Content";
 import { Product } from "@/components/cards/product/Product";
 import { Members } from "@/components/cards/members/Members";
-import { Companies } from "../components/cards/companies/Companies";
-import { PaidBanner } from "../components/cards/paidBanner/PaidBanner";
+import { Companies } from "@/components/cards/companies/Companies";
+import { PaidBanner } from "@/components/cards/paidBanner/PaidBanner";
+import { MainSection } from "@/components/layout/mainSection/MainSection";
 
 function App() {
   return (
@@ -24,7 +25,8 @@ function App() {
         {/* <Product /> */}
         {/* <Members /> */}
         {/* <Companies /> */}
-        <PaidBanner />
+        {/* <PaidBanner /> */}
+        <MainSection />
       </div>
     </>
   );
