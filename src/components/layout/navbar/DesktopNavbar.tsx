@@ -1,20 +1,20 @@
 import { Button } from "@/components/ui/Button";
 import { Link } from "@/components/ui/Link";
-import { Logo } from "@/components//ui/Logo";
-import type { INavbarData } from "./navbar.types";
+import { Logo } from "@/components/ui/Logo";
+import type {NavbarLink} from "./Navbar.tsx";
 
-export const DesktopNavbar = ({ data }: { data: INavbarData[] }) => {
+export const DesktopNavbar = ({ links }: {links: NavbarLink[]}) => {
   return (
     <nav className="hidden items-center justify-between py-[18px] px-[25px] rounded-3xl md:flex md:px-[80px] mdl:px-[108px] lg:px-[24px] ">
       <Logo />
       <div className="flex items-center gap-6">
-        {data.map((item) => (
+        {links.map((link) => (
           <Link
-            key={item.href}
-            href={item.href}
+            key={link.href}
+            href={link.href}
             className="text-black70 md:hover:text-black"
           >
-            {item.title}
+            {link.text}
           </Link>
         ))}
       </div>
@@ -25,3 +25,4 @@ export const DesktopNavbar = ({ data }: { data: INavbarData[] }) => {
     </nav>
   );
 };
+

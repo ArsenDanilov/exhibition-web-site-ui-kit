@@ -7,12 +7,12 @@ import {
   SheetOverlay,
 } from "@/components/ui/sheet";
 import { MobileMenuButton } from "./MobileMenuButton";
-import type { INavbarData } from "./navbar.types";
 import { Button } from "@/components/ui/Button";
 import navbarMenuArrow from "@/assets/navbarMenuArrow.svg"
 import { Link } from "@/components/ui/Link";
+import type {NavbarLink} from "./Navbar.tsx";
 
-export const MobileNavbar = ({ data }: { data: INavbarData[] }) => {
+export const MobileNavbar = ({ links }: {links: NavbarLink[]}) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -30,13 +30,13 @@ export const MobileNavbar = ({ data }: { data: INavbarData[] }) => {
           className="rounded-xl py-1 mx-auto w-[calc(100vw-2*3rem)] px-2"
         >
           <div className="mb-5 bg-background rounded-2xl">
-            {data.map((item) => (
+            {links.map((link) => (
               <Link
-                key={item.href}
-                href={item.href}
+                key={link.href}
+                href={link.href}
                 className="w-full flex justify-between items-center px-4 py-3 text-black70 hover:bg-gray-200 rounded-lg transition-colors"
               >
-                {item.title}
+                {link.text}
                 <img src={navbarMenuArrow} alt="navbar menu arrow" />
               </Link>
             ))}

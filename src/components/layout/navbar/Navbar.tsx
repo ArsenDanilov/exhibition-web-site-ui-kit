@@ -1,13 +1,38 @@
 import { MobileNavbar } from './MobileNavbar';
 import { DesktopNavbar } from './DesktopNavbar';
-import { navbarData } from './navbar.data';
+import type {EditableComponent} from "../../../types";
 
-export const Navbar = () => {
 
+export interface NavbarLink  {
+    text: string,
+    href: string,
+}
+
+interface NavbarProps {
+    links: NavbarLink[];
+}
+
+export const Navbar: EditableComponent<NavbarProps> = ({links}) => {
+    console.log('dfdfgdf',links)
     return (
         <div>
-            <DesktopNavbar data={navbarData}/>
-            <MobileNavbar data={navbarData}/>
+            <DesktopNavbar links={links}/>
+            <MobileNavbar links={links}/>
         </div>
     )
+}
+
+Navbar.schema = {
+    label: 'Navbar',
+    type: 'Navbar',
+    getDefaultProps: () => ({
+        links: [
+            { text: "Connect", href: "/connect" },
+            { text: "News", href: "/news" },
+            { text: "Sessions", href: "/sessions" },
+            { text: "Members", href: "/members" },
+            { text: "Products", href: "/products" },
+            { text: "Companies", href: "/companies" },
+        ]
+    })
 }
