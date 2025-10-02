@@ -1,6 +1,7 @@
 import { Text } from "@/components/ui/Text";
 import { Image } from "@/components/ui/Image";
 import moreButton from "@/assets/moreButton.svg";
+import { type IContentCard } from "./Content";
 
 export interface IContentData {
   video: string;
@@ -8,7 +9,7 @@ export interface IContentData {
   videoAlt?: string;
 }
 
-export const ContentCard = ({ video, videoTitle, videoAlt }: IContentData) => {
+export const ContentCard = ({ video, videoTitle, videoAlt }: IContentCard) => {
   return (
     <div className="px-4 py-5 mb-9">
       <Image src={video} alt={videoAlt} className="mb-5" />

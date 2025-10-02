@@ -1,21 +1,34 @@
-import { contentData } from "./content.data";
 import { ContentCard } from "./ContentCard";
 import { Button } from "@/components/ui/Button";
 import { Text } from "@/components/ui/Text";
+import { type EditableComponent } from "../../../types";
+import video1 from "@/assets/content/video1.png";
+import video2 from "@/assets/content/video2.png";
+import video3 from "@/assets/content/video3.png";
 
-export const Content = () => {
+export interface IContentCard {
+  video: string;
+  videoTitle: string;
+  videoAlt?: string;
+}
+
+interface ContentProps {
+  contentCards: IContentCard[];
+}
+
+export const Content: EditableComponent<ContentProps> = ({ contentCards }) => {
   return (
     <div className="px-7 py-5 rounded-3xl border border-black30">
       <Text tag="h3" textStyle="2xl" className="mb-5 font-semibold">
         Content
       </Text>
       <div className="mb-5">
-        {contentData.map((data, index) => (
+        {contentCards.map((card, index) => (
           <ContentCard
             key={index}
-            video={data.video}
-            videoTitle={data.videoTitle}
-            videoAlt={data.videoAlt}
+            video={card.video}
+            videoTitle={card.videoTitle}
+            videoAlt={card.videoAlt}
           />
         ))}
       </div>
@@ -24,4 +37,28 @@ export const Content = () => {
       </Button>
     </div>
   );
+};
+
+Content.schema = {
+  label: "Content",
+  type: "Content",
+  getDefaultProps: () => ({
+    contentCards: [
+      {
+        video: video1,
+        videoTitle: "Мнение эксперта: «Как продукту попасть на полку? В чем...",
+        videoAlt: "Video from post",
+      },
+      {
+        video: video2,
+        videoTitle: "Интервью с летчиком-космонавтом, Героем России...",
+        videoAlt: "Video from post",
+      },
+      {
+        video: video3,
+        videoTitle: "Тренды в разработке продуктов питания 2025",
+        videoAlt: "Video from post",
+      },
+    ],
+  }),
 };
