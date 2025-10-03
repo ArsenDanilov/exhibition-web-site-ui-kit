@@ -18,7 +18,8 @@ function App() {
           {/* <Navbar {...Navbar.schema.getDefaultProps()}/> */}
           {/* <Companies {...Companies.schema.getDefaultProps()} /> */}
           {/* <Content {...Content.schema.getDefaultProps()} />  */}
-          <LatestNews {...LatestNews.schema.getDefaultProps()} />
+          {/* <LatestNews {...LatestNews.schema.getDefaultProps()} /> */}
+          <Members {...Members.schema.getDefaultProps()} />
       </div>
     </>
   );

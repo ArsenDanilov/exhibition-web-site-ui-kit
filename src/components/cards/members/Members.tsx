@@ -1,21 +1,35 @@
 import { MemberCard } from "./MemberCard";
-import { membersData } from "./members.data";
 import { Text } from "@/components/ui/Text";
 import { Button } from "@/components/ui/Button";
+import { type EditableComponent } from "../../../types";
+import ezhovAvatar from "@/assets/usersAvatars/ezhovAvatar.png"
+import glazkovaAvatar from "@/assets/usersAvatars/glazkovaAvatar.png"
+import kapliyAvatar from "@/assets/usersAvatars/kapliyAvatar.png"
+import kivichAvatar from "@/assets/usersAvatars/kivichAvatar.png"
 
-export const Members = () => {
+export interface IMemberCard {
+  memberAvatar: string;
+  memberName: string;
+  memberCompany: string;
+}
+
+interface MembersProps {
+  membersCards: IMemberCard[];
+}
+
+export const Members: EditableComponent<MembersProps> = ({ membersCards }) => {
   return (
     <div className="px-7 py-5 rounded-3xl border border-black30">
       <Text tag="h3" textStyle="2xl" className="mb-5 font-semibold">
         Members
       </Text>
       <div className="mb-5 grid grid-cols-3 grid-rows-2 gap-x-10 gap-y-4">
-        {membersData.map((item, index) => (
+        {membersCards.map((card, index) => (
           <MemberCard
             key={index}
-            avatar={item.avatar}
-            name={item.name}
-            company={item.company}
+            memberAvatar={card.memberAvatar}
+            memberName={card.memberName}
+            memberCompany={card.memberCompany}
           />
         ))}
       </div>
@@ -24,4 +38,43 @@ export const Members = () => {
       </Button>
     </div>
   );
+};
+
+Members.schema = {
+  label: "Members",
+  type: "Members",
+  getDefaultProps: () => ({
+    membersCards: [
+      {
+        memberAvatar: ezhovAvatar,
+        memberName: "Александр Ежов",
+        memberCompany: "ITE group",
+      },
+      {
+        memberAvatar: kapliyAvatar,
+        memberName: "Екатерина Каплий",
+        memberCompany: "ITE group",
+      },
+      {
+        memberAvatar: glazkovaAvatar,
+        memberName: "Валерия Глазкова",
+        memberCompany: "ITE group",
+      },
+      {
+        memberAvatar: kivichAvatar,
+        memberName: "Александра Кивич",
+        memberCompany: "ITE group",
+      },
+      {
+        memberAvatar: ezhovAvatar,
+        memberName: "Александр Ежов",
+        memberCompany: "ITE group",
+      },
+      {
+        memberAvatar: kapliyAvatar,
+        memberName: "Екатерина Каплий",
+        memberCompany: "ITE group",
+      },
+    ],
+  }),
 };

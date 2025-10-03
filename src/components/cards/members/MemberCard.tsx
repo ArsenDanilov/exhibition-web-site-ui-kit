@@ -1,18 +1,13 @@
 import { Image } from "@/components/ui/Image";
 import { Text } from "@/components/ui/Text";
+import { type IMemberCard } from "./Members";
 
-export interface IMemberData {
-  avatar: string;
-  name: string;
-  company: string;
-}
-
-export const MemberCard = ({ avatar, name, company }: IMemberData) => {
+export const MemberCard = ({ memberAvatar, memberName, memberCompany }: IMemberCard) => {
   return (
     <div className="flex flex-col justify-center">
-        <Image src={avatar} alt="user avatar" className="mb-3" />
-        <Text className="mb-1 text-center">{name}</Text>
-        <Text textStyle="xs" className="text-darkGrey text-center">{company}</Text>
+        <Image src={memberAvatar} alt="user avatar" className="mb-3" />
+        <Text className="mb-1 text-center">{memberName}</Text>
+        <Text textStyle="xs" className="text-darkGrey text-center">{memberCompany}</Text>
     </div>
   )
 };
