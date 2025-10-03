@@ -2,9 +2,9 @@ import { Button } from "@/components/ui/Button";
 import { Image } from "@/components/ui/Image";
 import { Text } from "@/components/ui/Text";
 import favoriteIcon from "@/assets/favoriteIcon.svg";
-import type { IProductData } from "./product.data";
+import { type IProductCard } from "./Product";
 
-export const ProductCard = ({ productName, productImage }: IProductData) => {
+export const ProductCard = ({ productName, productImage }: IProductCard) => {
   return (
     <div>
       <div className="rounded-lg border border-black12 h-[169px] mb-4 p-2">

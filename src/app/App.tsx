@@ -20,7 +20,8 @@ function App() {
           {/* <Content {...Content.schema.getDefaultProps()} />  */}
           {/* <LatestNews {...LatestNews.schema.getDefaultProps()} /> */}
           {/* <Members {...Members.schema.getDefaultProps()} /> */}
-          <PaidBanner {...PaidBanner.schema.getDefaultProps()} />
+          {/* <PaidBanner {...PaidBanner.schema.getDefaultProps()} /> */}
+          <Product {...Product.schema.getDefaultProps()} />
       </div>
     </>
   );
