@@ -5,7 +5,7 @@ import { type IMemberCard } from "./Members";
 export const MemberCard = ({ memberAvatar, memberName, memberCompany }: IMemberCard) => {
   return (
     <div className="flex flex-col justify-center">
-        <Image src={memberAvatar} alt="user avatar" className="mb-3" />
+        <Image src={memberAvatar} alt="user avatar" className="mb-3 size-[100px] mx-auto" />
         <Text className="mb-1 text-center">{memberName}</Text>
         <Text textStyle="xs" className="text-darkGrey text-center">{memberCompany}</Text>
     </div>
