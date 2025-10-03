@@ -2,7 +2,7 @@ import { Image } from "@/components/ui/Image";
 import { Text } from "@/components/ui/Text";
 import likeIcon from "@/assets/likeIcon.svg";
 import commentIcon from "@/assets/commentIcon.svg";
-import { type INewsData } from "./news.data";
+import { type INewsCard } from "./LatestNews";
 
 export const NewsCard = ({
   username,
@@ -12,7 +12,7 @@ export const NewsCard = ({
   images,
   likes,
   comments,
-}: INewsData) => {
+}: INewsCard) => {
   return (
     <div className="px-4 py-5 rounded-3xl mb-5 border border-black30">
       <div className="flex gap-3 items-center mb-4">

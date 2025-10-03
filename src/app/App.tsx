@@ -17,7 +17,8 @@ function App() {
       <div>
           {/* <Navbar {...Navbar.schema.getDefaultProps()}/> */}
           {/* <Companies {...Companies.schema.getDefaultProps()} /> */}
-          <Content {...Content.schema.getDefaultProps()} /> 
+          {/* <Content {...Content.schema.getDefaultProps()} />  */}
+          <LatestNews {...LatestNews.schema.getDefaultProps()} />
       </div>
     </>
   );
