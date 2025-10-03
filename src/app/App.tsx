@@ -21,7 +21,8 @@ function App() {
           {/* <LatestNews {...LatestNews.schema.getDefaultProps()} /> */}
           {/* <Members {...Members.schema.getDefaultProps()} /> */}
           {/* <PaidBanner {...PaidBanner.schema.getDefaultProps()} /> */}
-          <Product {...Product.schema.getDefaultProps()} />
+          {/* <Product {...Product.schema.getDefaultProps()} /> */}
+          <Sessions {...Sessions.schema.getDefaultProps()} />
       </div>
     </>
   );
