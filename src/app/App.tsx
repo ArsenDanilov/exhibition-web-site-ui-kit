@@ -19,7 +19,8 @@ function App() {
           {/* <Companies {...Companies.schema.getDefaultProps()} /> */}
           {/* <Content {...Content.schema.getDefaultProps()} />  */}
           {/* <LatestNews {...LatestNews.schema.getDefaultProps()} /> */}
-          <Members {...Members.schema.getDefaultProps()} />
+          {/* <Members {...Members.schema.getDefaultProps()} /> */}
+          <PaidBanner {...PaidBanner.schema.getDefaultProps()} />
       </div>
     </>
   );

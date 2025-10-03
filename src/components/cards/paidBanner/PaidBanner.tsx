@@ -1,10 +1,24 @@
 import { Image } from "@/components/ui/Image";
 import paidBanner from "@/assets/paidBanner/paidBanner.png"
+import { type EditableComponent } from "../../../types";
 
-export const PaidBanner = () => {
+interface PaidBannerProps {
+  banner: string;
+}
+
+export const PaidBanner: EditableComponent<PaidBannerProps> = ({ banner }) => {
     return (
         <div>
-            <Image src={paidBanner} alt="banner with AD"/>
+            <Image src={banner} alt="banner with AD"/>
         </div>
     )
 }
+
+PaidBanner.schema = {
+  label: "PaidBanner",
+  type: "PaidBanner",
+  getDefaultProps: () => ({
+    banner: paidBanner
+  }),
+};
+
