@@ -10,9 +10,9 @@ function App() {
       <div>
         <Navbar {...Navbar.schema.getDefaultProps()} />
         <About {...About.schema.getDefaultProps()} />
-        <MainSection />
+        {/* <MainSection />
         <Join {...Join.schema.getDefaultProps()} />
-        <Footer {...Footer.schema.getDefaultProps()} />
+        <Footer {...Footer.schema.getDefaultProps()} /> */}
       </div>
     </>
   );

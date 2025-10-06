@@ -19,7 +19,7 @@ export const About: EditableComponent<IAboutProps> = ({ aboutTitle, aboutDescrip
       <div className="flex-1">
         <Text
           tag="h1"
-          textStyle="5xl"
+          textStyle="2xl"
           className="font-bold leading-[114.99%] mb-4 w-3/4"
         >
           {aboutTitle}
