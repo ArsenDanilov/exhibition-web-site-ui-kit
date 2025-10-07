@@ -6,6 +6,7 @@ import { Footer } from "@/components/layout/footer/Footer";
 import { LatestNews } from "../components/cards/latestNews/LatestNews";
 import { Sessions } from "../components/cards/sessions/Sessions";
 import { Content } from "../components/cards/content/Content";
+import { Members } from "../components/cards/members/Members";
 
 function App() {
   return (
@@ -17,8 +18,9 @@ function App() {
         <Join {...Join.schema.getDefaultProps()} />
         <Footer {...Footer.schema.getDefaultProps()} /> */}
         {/* <LatestNews {...LatestNews.schema.getDefaultProps()} /> */}
-        <Sessions {...Sessions.schema.getDefaultProps()}/>
+        {/* <Sessions {...Sessions.schema.getDefaultProps()}/> */}
         {/* <Content {...Content.schema.getDefaultProps()} /> */}
+        <Members {...Members.schema.getDefaultProps()} />
       </div>
     </>
   );

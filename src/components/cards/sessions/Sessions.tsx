@@ -16,7 +16,7 @@ interface SessionsProps {
 
 export const Sessions: EditableComponent<SessionsProps> = ({ sessionsCards }) => {
   return (
-    <div className="px-7 py-5 rounded-3xl sm:border border-black30">
+    <div className="px-6 py-4 sm:px-5 sm:py-3 lg:px-7 lg:py-5 rounded-3xl sm:border border-black30">
       <Text tag="h2" textStyle="xl" className="mb-5 font-semibold">
         Sessions
       </Text>
