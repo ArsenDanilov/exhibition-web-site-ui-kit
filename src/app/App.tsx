@@ -17,8 +17,8 @@ function App() {
         <Join {...Join.schema.getDefaultProps()} />
         <Footer {...Footer.schema.getDefaultProps()} /> */}
         {/* <LatestNews {...LatestNews.schema.getDefaultProps()} /> */}
-        {/* <Sessions {...Sessions.schema.getDefaultProps()}/> */}
-        <Content {...Content.schema.getDefaultProps()} />
+        <Sessions {...Sessions.schema.getDefaultProps()}/>
+        {/* <Content {...Content.schema.getDefaultProps()} /> */}
       </div>
     </>
   );

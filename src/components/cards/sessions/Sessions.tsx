@@ -1,6 +1,7 @@
 import { SessionCard } from "./SessionCard";
 import { Text } from "@/components/ui/Text";
 import { type EditableComponent } from "../../../types";
+import { Button } from "@/components/ui/button";
 
 export interface ISessionCard {
   sessionTitle: string;
@@ -15,7 +16,7 @@ interface SessionsProps {
 
 export const Sessions: EditableComponent<SessionsProps> = ({ sessionsCards }) => {
   return (
-    <div className="px-7 py-5 rounded-3xl border border-black30">
+    <div className="px-7 py-5 rounded-3xl sm:border border-black30">
       <Text tag="h2" textStyle="xl" className="mb-5 font-semibold">
         Sessions
       </Text>
@@ -28,6 +29,9 @@ export const Sessions: EditableComponent<SessionsProps> = ({ sessionsCards }) =>
           sessionTags={card.sessionTags}
         />
       ))}
+      <Button variant="secondary" className="w-full text-darkGrey">
+        Show more
+      </Button>
     </div>
   );
 };
