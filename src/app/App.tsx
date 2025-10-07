@@ -7,6 +7,7 @@ import { LatestNews } from "../components/cards/latestNews/LatestNews";
 import { Sessions } from "../components/cards/sessions/Sessions";
 import { Content } from "../components/cards/content/Content";
 import { Members } from "../components/cards/members/Members";
+import { Product } from "../components/cards/product/Product";
 
 function App() {
   return (
@@ -20,7 +21,8 @@ function App() {
         {/* <LatestNews {...LatestNews.schema.getDefaultProps()} /> */}
         {/* <Sessions {...Sessions.schema.getDefaultProps()}/> */}
         {/* <Content {...Content.schema.getDefaultProps()} /> */}
-        <Members {...Members.schema.getDefaultProps()} />
+        {/* <Members {...Members.schema.getDefaultProps()} /> */}
+        <Product {...Product.schema.getDefaultProps()} />
       </div>
     </>
   );

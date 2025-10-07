@@ -16,11 +16,11 @@ interface ProductProps {
 
 export const Product: EditableComponent<ProductProps> = ({ productCards }) => {
   return (
-    <div className="px-7 py-5 rounded-3xl border border-black30">
-      <Text tag="h3" textStyle="2xl" className="mb-5 font-semibold">
+    <div className="hidden sm:block px-6 py-4 sm:px-5 sm:py-3 lg:px-7 lg:py-5 rounded-3xl border border-black30 ">
+      <Text tag="h2" textStyle="xl" className="mb-5 font-semibold">
         Product
       </Text>
-      <div className="flex items-center gap-7 mb-5 justify-center">
+      <div className="flex justify-between gap-5 lg:gap-7 mb-4 lg:mb-5">
         {productCards.map((card) => (
           <ProductCard
             key={card.productName}
@@ -29,7 +29,7 @@ export const Product: EditableComponent<ProductProps> = ({ productCards }) => {
           />
         ))}
       </div>
-      <Button variant="secondary" className="text-darkGrey w-full">
+      <Button variant="secondary" className="w-full text-darkGrey">
         Show more
       </Button>
     </div>

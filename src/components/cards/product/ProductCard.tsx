@@ -7,13 +7,13 @@ import { type IProductCard } from "./Product";
 export const ProductCard = ({ productName, productImage }: IProductCard) => {
   return (
     <div>
-      <div className="rounded-lg border border-black12 h-[169px] mb-4 p-2">
+      <div className="rounded-lg border border-black12 h-[121px] lg:h-[169px] mb-4 p-2">
         <Image src={productImage} alt="Product image" className="w-full h-full object-cover" />
       </div>
-      <Text className="font-semibold mb-4">{productName}</Text>
-      <div className="flex gap-2">
+      <Text className="text-[11px] sm:text-base font-semibold mb-4">{productName}</Text>
+      <div className="flex gap-2 items-end">
         <Button>Interested</Button>
-        <Button variant="secondary" className="w-[46px] h-[40px]"><Image src={favoriteIcon} /></Button>
+        <Button variant="secondary" className="w-[34px] h-[32px] lg:w-[46px] lg:h-[40px]"><Image src={favoriteIcon} /></Button>
       </div>
     </div>
   );
