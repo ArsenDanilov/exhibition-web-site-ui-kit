@@ -14,16 +14,16 @@ export const NewsCard = ({
   comments,
 }: INewsCard) => {
   return (
-    <div className="px-4 py-5 rounded-3xl mb-5 border border-black30">
+    <div className="p-3 lg:px-4 lg:py-5 rounded-3xl mb-5 md:border border-black30">
       <div className="flex gap-3 items-center mb-4">
         <div>
           <Image src={avatar} alt="user avatar" className="size-[50px]"/>
         </div>
         <div className="flex flex-col gap-2 justify-center">
-          <Text textStyle="lg" className="font-bold">
+          <Text className="font-bold">
             {username}
           </Text>
-          <Text className="text-black70 font-extralight">{postedAt}</Text>
+          <Text textStyle="sm" className="text-black70 font-extralight">{postedAt}</Text>
         </div>
       </div>
       <Text>{text}</Text>

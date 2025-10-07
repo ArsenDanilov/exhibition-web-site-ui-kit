@@ -26,11 +26,11 @@ interface LatestNewsProps {
 
 export const LatestNews: EditableComponent<LatestNewsProps> = ({ newsCards }) => {
   return (
-    <section className="w-[60%]">
+    <section className="md:w-[60%]">
       <Text
-        tag="h3"
-        textStyle="3xl"
-        className="text-3xl mb-5 font-semibold"
+        tag="h2"
+        textStyle="xl"
+        className="text-center md:text-start mb-5 font-semibold"
       >
         Latest News
       </Text>
@@ -48,7 +48,9 @@ export const LatestNews: EditableComponent<LatestNewsProps> = ({ newsCards }) =>
           />
         ))}
       </div>
-      <Button className="w-full">Show more content</Button>
+      <div className="px-6 md:px-0">
+        <Button className="w-full">Show more content</Button>
+      </div>
     </section>
   );
 };
