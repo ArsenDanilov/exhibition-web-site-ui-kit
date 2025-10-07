@@ -5,6 +5,7 @@ import { Join } from "@/components/layout/join/Join";
 import { Footer } from "@/components/layout/footer/Footer";
 import { LatestNews } from "../components/cards/latestNews/LatestNews";
 import { Sessions } from "../components/cards/sessions/Sessions";
+import { Content } from "../components/cards/content/Content";
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
         <Join {...Join.schema.getDefaultProps()} />
         <Footer {...Footer.schema.getDefaultProps()} /> */}
         {/* <LatestNews {...LatestNews.schema.getDefaultProps()} /> */}
-        <Sessions {...Sessions.schema.getDefaultProps()}/>
+        {/* <Sessions {...Sessions.schema.getDefaultProps()}/> */}
+        <Content {...Content.schema.getDefaultProps()} />
       </div>
     </>
   );

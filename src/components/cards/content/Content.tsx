@@ -18,11 +18,11 @@ interface ContentProps {
 
 export const Content: EditableComponent<ContentProps> = ({ contentCards }) => {
   return (
-    <div className="px-7 py-5 rounded-3xl border border-black30">
-      <Text tag="h3" textStyle="2xl" className="mb-5 font-semibold">
+    <div className="hidden sm:block sm:px-5 sm:py-3 lg:px-7 lg:py-5 rounded-3xl border border-black30">
+      <Text tag="h2" textStyle="xl" className="sm:mb-4 lg:mb-5 font-semibold">
         Content
       </Text>
-      <div className="mb-5">
+      <div className="mb-3 lg:mb-5">
         {contentCards.map((card, index) => (
           <ContentCard
             key={index}

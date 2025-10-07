@@ -11,7 +11,7 @@ export interface IContentData {
 
 export const ContentCard = ({ video, videoTitle, videoAlt }: IContentCard) => {
   return (
-    <div className="px-4 py-5 mb-9">
+    <div className="sm:py-4 lg:py-5">
       <Image src={video} alt={videoAlt} className="mb-5" />
       <div className="flex justify-between items-center gap-4">
         <Text className="font-semibold">{videoTitle}</Text>
