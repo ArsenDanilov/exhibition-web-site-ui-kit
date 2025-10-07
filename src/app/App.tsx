@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <div>
-        <Navbar {...Navbar.schema.getDefaultProps()} />
+        {/* <Navbar {...Navbar.schema.getDefaultProps()} /> */}
         <About {...About.schema.getDefaultProps()} />
         {/* <MainSection />
         <Join {...Join.schema.getDefaultProps()} />

@@ -15,30 +15,35 @@ interface IAboutProps {
 
 export const About: EditableComponent<IAboutProps> = ({ aboutTitle, aboutDescription, aboutBanner }) => {
   return (
-    <section className="rounded-3xl lg:px-[40px] lg:py-[50px] flex gap-5">
+    <section className="rounded-3xl px-[24px] py-[35px] flex flex-col md:flex-row md:p-[30px] lg:px-[40px] lg:py-[50px]  lg:gap-5">
       <div className="flex-1">
         <Text
           tag="h1"
           textStyle="2xl"
-          className="font-bold leading-[114.99%] mb-4 w-3/4"
+          className="font-bold leading-[114.99%] mb-4 w-[100%] md:w-[90%] lg:w-3/4"
         >
           {aboutTitle}
         </Text>
         <Text
-          tag="h2"
-          textStyle="lg"
-          className="mb-10 font-normal leading-6 tracking-normal w-3/4"
+          className="mb-10 font-normal leading-6 tracking-normal w-[100%] md:w-[90%] lg:w-3/4"
         >
           {aboutDescription}
         </Text>
-        <div className="flex gap-3">
-          <Button size="lg">Sign In</Button>
+        <div className="md:hidden flex items-center justify-end flex-1 mb-6">
+        <Image
+          src={aboutBanner.img}
+          alt={aboutBanner.alt}
+          className="rounded-3xl"
+        />
+      </div>
+        <div className="flex-col md:flex-row">
+          <Button size="lg" className="mb-3 md:mb-0 md:mr-2">Sign In</Button>
           <Button variant="secondary" size="lg">
             Register
           </Button>
         </div>
       </div>
-      <div className="flex items-center justify-end flex-1">
+      <div className="hidden md:flex items-center justify-end flex-1">
         <Image
           src={aboutBanner.img}
           alt={aboutBanner.alt}
