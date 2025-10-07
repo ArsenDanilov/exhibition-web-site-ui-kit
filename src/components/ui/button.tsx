@@ -19,7 +19,7 @@ const buttonVariants = cva(
       },
       size: {
         default: "w-[130px] h-[40px]",
-        xs: "w-[117px] h-[40px]",
+        xs: "w-[100px] h-[35px] sm:w-[84px] sm:h-[29px] lg:w-[117px] lg:h-[40px]",
         sm: "w-[122px] h-[46px]",
         md: "w-[200px] h-[46px]",
         lg: "w-full h-[40px] md:w-[156px] md:h-[32px] xl:w-[220px] xl:h-[44px] text-[16px] md:text-[12px] xl:text-[16px]",

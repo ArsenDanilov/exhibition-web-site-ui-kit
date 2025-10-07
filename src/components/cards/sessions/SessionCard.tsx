@@ -12,7 +12,7 @@ export const SessionCard = ({
   sessionTags,
 }: ISessionCard) => {
   return (
-    <div className="px-4 py-5 bg-lightPink mb-5 rounded-2xl flex items-start gap-5 justify-between">
+    <div className="p-3 lg:px-4 lg:py-5 bg-lightPink mb-5 rounded-2xl flex items-start gap-5 justify-between">
       <div>
         <Text className="font-semibold mb-2">
           {sessionTitle}&nbsp;|{" "}

@@ -16,7 +16,7 @@ interface SessionsProps {
 export const Sessions: EditableComponent<SessionsProps> = ({ sessionsCards }) => {
   return (
     <div className="px-7 py-5 rounded-3xl border border-black30">
-      <Text tag="h3" textStyle="2xl" className="mb-5 font-semibold">
+      <Text tag="h2" textStyle="xl" className="mb-5 font-semibold">
         Sessions
       </Text>
       {sessionsCards.map((card, index) => (

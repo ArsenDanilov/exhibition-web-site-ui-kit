@@ -4,6 +4,7 @@ import { Navbar } from "@/components/layout/navbar/Navbar";
 import { Join } from "@/components/layout/join/Join";
 import { Footer } from "@/components/layout/footer/Footer";
 import { LatestNews } from "../components/cards/latestNews/LatestNews";
+import { Sessions } from "../components/cards/sessions/Sessions";
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
         {/* <MainSection />
         <Join {...Join.schema.getDefaultProps()} />
         <Footer {...Footer.schema.getDefaultProps()} /> */}
-        <LatestNews {...LatestNews.schema.getDefaultProps()} />
+        {/* <LatestNews {...LatestNews.schema.getDefaultProps()} /> */}
+        <Sessions {...Sessions.schema.getDefaultProps()}/>
       </div>
     </>
   );
