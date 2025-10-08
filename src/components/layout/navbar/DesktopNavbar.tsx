@@ -12,7 +12,7 @@ export const DesktopNavbar = ({ links }: {links: NavbarLink[]}) => {
           <Link
             key={link.href}
             href={link.href}
-            className="text-black70 md:hover:text-black"
+            className="text-black70 hover:text-black sm:text-xs lg:text-sm"
           >
             {link.text}
           </Link>
