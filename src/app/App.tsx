@@ -10,6 +10,7 @@ import { Members } from "../components/cards/members/Members";
 import { Product } from "../components/cards/product/Product";
 import { Companies } from "../components/cards/companies/Companies";
 
+
 function App() {
   return (
     <>
@@ -24,7 +25,8 @@ function App() {
         {/* <Content {...Content.schema.getDefaultProps()} /> */}
         {/* <Members {...Members.schema.getDefaultProps()} /> */}
         {/* <Product {...Product.schema.getDefaultProps()} /> */}
-        <Companies {...Companies.schema.getDefaultProps()} />
+        {/* <Companies {...Companies.schema.getDefaultProps()} /> */}
+        <Join {...Join.schema.getDefaultProps()} />
       </div>
     </>
   );

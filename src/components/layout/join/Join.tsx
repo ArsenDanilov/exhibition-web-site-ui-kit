@@ -3,6 +3,8 @@ import { Image } from "@/components/ui/Image";
 import { Text } from "@/components/ui/Text";
 import connectAppInterface_1 from "@/assets/connectAppInterface_1.png";
 import connectAppInterface_2 from "@/assets/connectAppInterface_2.png";
+import connectAppInterface_1_tab from "@/assets/connectAppInterface_1_tab.png";
+import connectAppInterface_2_tab from "@/assets/connectAppInterface_2_tab.png";
 import joinIcons from "@/assets/joinIcons.svg";
 import { type EditableComponent } from "../../../types";
 
@@ -13,35 +15,47 @@ interface JoinProps {
 
 export const Join: EditableComponent<JoinProps> = ({ joinTitle, joinDescription }) => {
   return (
-    <section className=" bg-black lg:px-[80px] lg:py-[90px] flex gap-5 text-white rounded-3xl relative">
-      <div className="flex-1">
+    <section className="bg-black px-6 py-9 md:px-14 md:py-16 lg:px-20 lg:py-[90px] flex gap-5 text-white rounded-3xl relative">
+      <div className="md:flex-1">
         <Image
           src={joinIcons}
           alt="social media icons"
-          className="mb-8 text-5xl"
+          className="hidden md:block md:mb-6 lg:mb-8"
         />
-        <Text tag="h1" textStyle="5xl" className="mb-4">
+        <Text tag="h1" textStyle="2xl" className="mb-4 font-semibold">
           {joinTitle}
         </Text>
-        <Text textStyle="lg" className="mb-8 w-3/4">
+        <Text className="mb-6 md:text-xs md:w-3/4 lg:text-base lg:mb-8">
           {joinDescription}
         </Text>
         <div className="flex gap-3">
-          <Button size="md" className="text-lg">
+          <Button size="md">
             Join
           </Button>
         </div>
       </div>
-      <div className="flex items-center justify-center flex-1">
+      <div className="hidden md:flex items-center justify-center md:flex-1">
+        <Image
+          src={connectAppInterface_2_tab}
+          alt="Interface of the Connect application interface"
+          className="md:block lg:hidden absolute top-0"
+        />
+        <Image
+          src={connectAppInterface_1_tab}
+          alt="Interface of the Connect application interface"
+          className="md:block lg:hidden absolute left-[50%] bottom-0"
+        />
+
+
         <Image
           src={connectAppInterface_2}
           alt="Interface of the Connect application interface"
-          className="absolute top-0"
+          className="hidden lg:block absolute top-0"
         />
         <Image
           src={connectAppInterface_1}
           alt="Interface of the Connect application interface"
-          className="absolute left-[50%] bottom-0"
+          className="hidden lg:block absolute left-[50%] bottom-0"
         />
       </div>
     </section>
