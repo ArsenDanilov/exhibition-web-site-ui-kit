@@ -18,8 +18,8 @@ interface CompaniesProps {
 
 export const Companies: EditableComponent<CompaniesProps> = ({ companyCards }) => {
   return (
-    <div className="px-7 py-5 rounded-3xl border border-black30">
-      <Text tag="h3" textStyle="2xl" className="text-2xl mb-5 font-semibold">
+    <div className="px-6 py-4 sm:px-5 sm:py-3 lg:px-7 lg:py-5 rounded-3xl border border-black30">
+      <Text tag="h2" textStyle="xl" className="text-xl mb-5 font-semibold">
         Content
       </Text>
       <div className="mb-5">
@@ -31,9 +31,9 @@ export const Companies: EditableComponent<CompaniesProps> = ({ companyCards }) =
           />
         ))}
       </div>
-      <Text className="mb-5">
+      <Text className="mb-5 text-sm lg:text-base">
         Get a list of exhibiting companies that can solve your business needs in{" "}
-        <span className="text-primary font-semibold">Matchmaking</span>
+        <span className="text-primary font-semibold text-sm lg:text-base">Matchmaking</span>
       </Text>
       <Button variant="secondary" className="w-full text-darkGrey">
         Show more

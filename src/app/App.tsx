@@ -8,6 +8,7 @@ import { Sessions } from "../components/cards/sessions/Sessions";
 import { Content } from "../components/cards/content/Content";
 import { Members } from "../components/cards/members/Members";
 import { Product } from "../components/cards/product/Product";
+import { Companies } from "../components/cards/companies/Companies";
 
 function App() {
   return (
@@ -22,7 +23,8 @@ function App() {
         {/* <Sessions {...Sessions.schema.getDefaultProps()}/> */}
         {/* <Content {...Content.schema.getDefaultProps()} /> */}
         {/* <Members {...Members.schema.getDefaultProps()} /> */}
-        <Product {...Product.schema.getDefaultProps()} />
+        {/* <Product {...Product.schema.getDefaultProps()} /> */}
+        <Companies {...Companies.schema.getDefaultProps()} />
       </div>
     </>
   );

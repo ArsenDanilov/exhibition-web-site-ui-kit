@@ -7,12 +7,12 @@ import { type ICompanyCard } from "./Companies";
 export const CompanyCard = ({ companyLogo, companyName, companyDescription }: ICompanyCard) => {
     return (
         <div className="flex items-center justify-between mb-4 gap-3">
-            <Image src={companyLogo} alt="company avatar" className="size-[70px]"/>
+            <Image src={companyLogo} alt="company avatar" className="size-[60px] sm:size-[50px] lg:size-[70px]"/>
             <div className="w-2/3 flex flex-col items-center">
-                <Text tag="h4" className="font-semibold mb-1">{companyName}</Text>
-                <Text textStyle="sm" className="text-darkGrey">{companyDescription}</Text>
+                <Text className="font-semibold mb-1 text-sm lg:text-base">{companyName}</Text>
+                <Text textStyle="xs" className="text-darkGrey">{companyDescription}</Text>
             </div>
-            <Button variant="secondary" size="icon" className="flex justify-center items-center size-[38px] rounded-full"><Image src={plusIcon} /></Button>
+            <Button variant="secondary" size="icon" className="flex justify-center items-center size-[32px] sm:size-[27px] lg:size-[38px] rounded-full"><Image src={plusIcon} /></Button>
         </div>
     )
 }
