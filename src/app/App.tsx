@@ -26,7 +26,8 @@ function App() {
         {/* <Members {...Members.schema.getDefaultProps()} /> */}
         {/* <Product {...Product.schema.getDefaultProps()} /> */}
         {/* <Companies {...Companies.schema.getDefaultProps()} /> */}
-        <Join {...Join.schema.getDefaultProps()} />
+        {/* <Join {...Join.schema.getDefaultProps()} /> */}
+        <Footer {...Footer.schema.getDefaultProps()} />
       </div>
     </>
   );

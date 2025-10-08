@@ -14,12 +14,12 @@ interface FooterProps {
 
 export const Footer: EditableComponent<FooterProps> = ({ links }) => {
   return (
-    <footer className="px-11 pt-7 pb-6 flex justify-between items-center border-black30">
-      <Logo />
-      <div className="flex justify-center gap-5">
+    <footer className="px-20 py-9 md:px-12 md:pt-5 md:pb-4 lg:px-11 lg:pt-7 lg:pb-6 flex flex-col md:flex-row justify-between items-center border-black30">
+      <Logo className="mb-6 md:mb-0" />
+      <div className="flex flex-col md:flex-row justify-center gap-5">
         {links.map((link) => (
           <Link href={link.href} key={link.href}>
-            <Text textStyle="sm" className="text-black30">
+            <Text className="text-center md:text-xs md:text-end lg:text-sm text-black30">
               {link.title}
             </Text>
           </Link>
