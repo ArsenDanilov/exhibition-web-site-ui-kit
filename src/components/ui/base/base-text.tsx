@@ -7,6 +7,7 @@ const textVariants = cva(
   {
     variants: {
       size: {
+        xxs: "text-[11px]",
         xs: "text-xs",
         sm: "text-sm",
         base: "text-base",
@@ -14,8 +15,11 @@ const textVariants = cva(
         lg: "text-lg",
         xl: "text-xl",
         "2xl": "text-2xl",
+        "3xl": "text-3xl",
       },
       weight: {
+        extralight: "font-extralight",
+        light: "font-light",
         normal: "font-normal",
         medium: "font-medium",
         semibold: "font-semibold",
@@ -27,6 +31,9 @@ const textVariants = cva(
         primary: "text-primary",
         secondary: "text-secondary",
         destructive: "text-destructive",
+        white: "text-white",
+        darkGrey: "text-darkGrey",
+        black70: "text-black70",
       },
     },
     defaultVariants: {

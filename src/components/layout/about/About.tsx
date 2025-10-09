@@ -18,14 +18,16 @@ export const About: EditableComponent<IAboutProps> = ({ aboutTitle, aboutDescrip
     <section className="rounded-3xl px-[24px] py-[35px] flex flex-col md:flex-row md:p-[30px] lg:px-[40px] lg:py-[50px]  lg:gap-5">
       <div className="flex-1">
         <Text
-          tag="h1"
-          textStyle="2xl"
-          className="font-bold leading-[114.99%] mb-4 w-[100%] md:w-[90%] lg:w-3/4"
+          as="h1"
+          size="2xl"
+          weight="bold"
+          className="leading-[114.99%] mb-4 w-[100%] md:w-[90%] lg:w-3/4"
         >
           {aboutTitle}
         </Text>
         <Text
-          className="mb-10 font-normal leading-6 tracking-normal w-[100%] md:w-[90%] lg:w-3/4"
+          weight="normal"
+          className="mb-10 leading-6 tracking-normal w-[100%] md:w-[90%] lg:w-3/4"
         >
           {aboutDescription}
         </Text>

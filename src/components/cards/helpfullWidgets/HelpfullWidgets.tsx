@@ -9,7 +9,7 @@ import { Companies } from "../companies/Companies";
 export const HelpfullWidgets = () => {
     return (
         <aside className="flex flex-col gap-5 w-[40%]">
-            <Text tag="h3" textStyle="3xl" className="text-3xl mb-5 font-semibold">Helpfull Widgets</Text>
+            <Text as="h3" size="3xl" weight="semibold" className="mb-5">Helpfull Widgets</Text>
             <PaidBanner {...PaidBanner.schema.getDefaultProps()} />
             <Sessions {...Sessions.schema.getDefaultProps()} />
             <Content {...Content.schema.getDefaultProps()} />

@@ -14,7 +14,7 @@ export const ContentCard = ({ video, videoTitle, videoAlt }: IContentCard) => {
     <div className="sm:py-4 lg:py-5">
       <Image src={video} alt={videoAlt} className="mb-5" />
       <div className="flex justify-between items-center gap-4">
-        <Text className="font-semibold">{videoTitle}</Text>
+        <Text weight="semibold">{videoTitle}</Text>
         <Image src={moreButton} />
       </div>
     </div>

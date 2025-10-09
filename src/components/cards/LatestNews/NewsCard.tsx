@@ -21,10 +21,10 @@ export const NewsCard = ({
           <Image src={avatar} alt="user avatar" className="size-[50px]"/>
         </div>
         <div className="flex flex-col gap-2 justify-center">
-          <Text className="font-bold">
+          <Text weight="bold">
             {username}
           </Text>
-          <Text textStyle="sm" className="text-black70 font-extralight">{postedAt}</Text>
+          <Text size="sm" weight="extralight" color="black70">{postedAt}</Text>
         </div>
       </div>
       <Text>{text}</Text>
@@ -38,13 +38,13 @@ export const NewsCard = ({
       <div className="flex gap-9 items-center">
         <div className="flex gap-2 items-center">
           <Image src={likeIcon} />
-          <Text tag="span" className="text-darkGrey">
+          <Text as="span" color="muted">
             {likes}
           </Text>
         </div>
         <div className="flex gap-2 items-center">
           <Image src={commentIcon} />
-          <Text tag="span" className="text-darkGrey">
+          <Text as="span" color="muted">
             {comments}
           </Text>
         </div>

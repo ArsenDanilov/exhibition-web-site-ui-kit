@@ -28,9 +28,10 @@ export const LatestNews: EditableComponent<LatestNewsProps> = ({ newsCards }) =>
   return (
     <section className="md:w-[60%]">
       <Text
-        tag="h2"
-        textStyle="xl"
-        className="text-center md:text-start mb-5 font-semibold"
+        as="h2"
+        size="xl"
+        weight="semibold"
+        className="text-center md:text-start mb-5"
       >
         Latest News
       </Text>

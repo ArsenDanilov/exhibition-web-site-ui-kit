@@ -5,7 +5,7 @@ import {
   SheetContent,
   SheetTrigger,
   SheetOverlay,
-} from "@/components/ui/sheet";
+} from "@/components/ui/base/sheet";
 import { MobileMenuButton } from "./MobileMenuButton";
 import { Button } from "@/components/ui/Button";
 import navbarMenuArrow from "@/assets/navbarMenuArrow.svg"

@@ -17,7 +17,7 @@ interface ProductProps {
 export const Product: EditableComponent<ProductProps> = ({ productCards }) => {
   return (
     <div className="hidden sm:block px-6 py-4 sm:px-5 sm:py-3 lg:px-7 lg:py-5 rounded-3xl border border-black30 ">
-      <Text tag="h2" textStyle="xl" className="mb-5 font-semibold">
+      <Text as="h2" size="xl" weight="semibold" className="mb-5">
         Product
       </Text>
       <div className="flex justify-between gap-5 lg:gap-7 mb-4 lg:mb-5">

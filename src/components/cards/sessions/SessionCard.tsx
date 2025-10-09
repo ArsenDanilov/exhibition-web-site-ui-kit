@@ -15,9 +15,9 @@ export const SessionCard = ({
   return (
     <div className="p-3 lg:px-4 lg:py-5 bg-lightPink mb-5 rounded-2xl flex items-start gap-5 justify-between">
       <div>
-        <Text className="font-semibold mb-2">
+        <Text weight="semibold" className="mb-2">
           {sessionTitle}&nbsp;|{" "}
-          <span className="font-normal">{formatPostTime(sessionPostedAt)}</span>
+          <Text as="span" weight="normal">{formatPostTime(sessionPostedAt)}</Text>
         </Text>
         <Text className="mb-1">{sessionDescription}</Text>
         <Link href="#" variant="primary" size="md" weight="semibold" className="mb-4 inline-block">

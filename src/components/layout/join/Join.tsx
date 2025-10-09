@@ -22,10 +22,10 @@ export const Join: EditableComponent<JoinProps> = ({ joinTitle, joinDescription 
           alt="social media icons"
           className="hidden md:block md:mb-6 lg:mb-8"
         />
-        <Text tag="h1" textStyle="2xl" className="mb-4 font-semibold">
+        <Text as="h1" size="2xl" color="white" weight="semibold" className="mb-4">
           {joinTitle}
         </Text>
-        <Text className="mb-6 md:text-xs md:w-3/4 lg:text-base lg:mb-8">
+        <Text color="white" className="mb-6 md:text-xs md:w-3/4 lg:text-base lg:mb-8">
           {joinDescription}
         </Text>
         <div className="flex gap-3">
