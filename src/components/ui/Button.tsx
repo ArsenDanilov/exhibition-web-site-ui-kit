@@ -1,11 +1,11 @@
 import { forwardRef } from "react"
-import { BaseButton, type BaseButtonProps } from "./base/base-button.tsx"
+import { BaseButton, type BaseButtonProps } from "./base/base-button"
 
 export interface ButtonProps extends BaseButtonProps {
   fullWidth?: boolean
 }
 
-const _Button = forwardRef<HTMLButtonElement, ButtonProps>(
+export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
   ({ fullWidth, ...props }, ref) => {
     return (
       <BaseButton
@@ -16,6 +16,3 @@ const _Button = forwardRef<HTMLButtonElement, ButtonProps>(
     )
   }
 )
-_Button.displayName = "Button"
-
-export { _Button }

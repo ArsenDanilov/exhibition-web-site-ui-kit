@@ -1,7 +1,7 @@
 import { SessionCard } from "./SessionCard";
 import { Text } from "@/components/ui/Text";
 import { type EditableComponent } from "../../../types";
-import { _Button } from "@/components/ui/_Button";
+import { Button } from "@/components/ui/Button";
 
 export interface ISessionCard {
   sessionTitle: string;
@@ -29,9 +29,9 @@ export const Sessions: EditableComponent<SessionsProps> = ({ sessionsCards }) =>
           sessionTags={card.sessionTags}
         />
       ))}
-      <_Button variant="secondary" className="w-full text-darkGrey">
+      <Button variant="secondary" className="w-full text-darkGrey">
         Show more
-      </_Button>
+      </Button>
     </div>
   );
 };

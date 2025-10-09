@@ -1,5 +1,5 @@
 import { ContentCard } from "./ContentCard";
-import { _Button } from "@/components/ui/_Button";
+import { Button } from "@/components/ui/Button";
 import { Text } from "@/components/ui/Text";
 import { type EditableComponent } from "../../../types";
 import video1 from "@/assets/content/video1.png";
@@ -32,9 +32,9 @@ export const Content: EditableComponent<ContentProps> = ({ contentCards }) => {
           />
         ))}
       </div>
-      <_Button variant="secondary" className="w-full text-darkGrey">
+      <Button variant="secondary" className="w-full text-darkGrey">
         Show more
-      </_Button>
+      </Button>
     </div>
   );
 };

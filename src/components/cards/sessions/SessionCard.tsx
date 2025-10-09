@@ -1,6 +1,6 @@
 import { Text } from "@/components/ui/Text";
 import { formatPostTime } from "@/utils/formatPostTime";
-import { _Button } from "@/components/ui/_Button";
+import { Button } from "@/components/ui/Button";
 import { Image } from "@/components/ui/Image";
 import { type ISessionCard } from "./Sessions";
 import favoriteIcon from "@/assets/favoriteIcon.svg";
@@ -19,7 +19,7 @@ export const SessionCard = ({
           <span className="font-normal">{formatPostTime(sessionPostedAt)}</span>
         </Text>
         <Text className="mb-1">{sessionDescription}</Text>
-        <button className="text-primary mb-4 font-semibold">Show more</button>
+        <Button className="text-primary mb-4 font-semibold">Show more</Button>
         <div className="flex gap-2 mb-4 flex-wrap">
           {sessionTags &&
             sessionTags.map((tag, index) => (
@@ -31,7 +31,7 @@ export const SessionCard = ({
               </div>
             ))}
         </div>
-        <_Button size="xs">Attend</_Button>
+        <Button size="xs">Attend</Button>
       </div>
       <Image src={favoriteIcon} />
     </div>

@@ -1,4 +1,4 @@
-import { _Button } from "@/components/ui/_Button";
+import { Button } from "@/components/ui/Button";
 import { Text } from "@/components/ui/Text";
 import { CompanyCard } from "./CompanyCard";
 import ckppAvatar from "@/assets/companies/ckppAvatar.png";
@@ -35,9 +35,9 @@ export const Companies: EditableComponent<CompaniesProps> = ({ companyCards }) =
         Get a list of exhibiting companies that can solve your business needs in{" "}
         <span className="text-primary font-semibold text-sm lg:text-base">Matchmaking</span>
       </Text>
-      <_Button variant="secondary" className="w-full text-darkGrey">
+      <Button variant="secondary" className="w-full text-darkGrey">
         Show more
-      </_Button>
+      </Button>
     </div>
   );
 };

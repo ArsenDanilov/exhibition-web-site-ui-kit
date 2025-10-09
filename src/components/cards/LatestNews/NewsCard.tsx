@@ -27,9 +27,9 @@ export const NewsCard = ({
         </div>
       </div>
       <Text>{text}</Text>
-      <button className="font-semibold text-primary mb-4">
+      <Button className="font-semibold text-primary mb-4">
         Показать больше
-      </button>
+      </Button>
       
       {images && (
         <Image src={images} alt="image from post" className="mb-4" />
