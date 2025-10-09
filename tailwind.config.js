@@ -8,10 +8,10 @@ export default {
         sans: ["Montserrat", "system-ui", "sans-serif"],
       },
       fontSize: {
-        base: ["16px", { lineHeight: "1.5" }],
         xs: "var(--text-xs)",
         sm: "var(--text-sm)",
         base: "var(--text-base)",
+        md: "var(--text-md)",
         lg: "var(--text-lg)",
         xl: "var(--text-xl)",
         "2xl": "var(--text-2xl)",
