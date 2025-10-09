@@ -57,6 +57,5 @@ const BaseText = React.forwardRef<HTMLElement, BaseTextProps>(
     )
   }
 )
-BaseText.displayName = "BaseText"
 
 export { BaseText }

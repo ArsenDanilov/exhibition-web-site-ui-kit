@@ -56,6 +56,5 @@ const BaseButton = React.forwardRef<HTMLButtonElement, BaseButtonProps>(
     )
   }
 )
-BaseButton.displayName = "BaseButton"
 
 export { BaseButton }

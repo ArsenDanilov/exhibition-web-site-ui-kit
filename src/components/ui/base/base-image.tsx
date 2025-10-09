@@ -51,6 +51,5 @@ const BaseImage = React.forwardRef<HTMLImageElement, BaseImageProps>(
     )
   }
 )
-BaseImage.displayName = "BaseImage"
 
 export { BaseImage }

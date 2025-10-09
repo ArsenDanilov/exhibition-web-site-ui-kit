@@ -49,6 +49,5 @@ const BaseLink = React.forwardRef<HTMLAnchorElement, BaseLinkProps>(
         )
     }
 )
-BaseLink.displayName = "BaseLink"
 
 export { BaseLink }
