@@ -38,8 +38,8 @@ export const About: EditableComponent<IAboutProps> = ({ aboutTitle, aboutDescrip
           className="rounded-3xl"
         />
       </div>
-        <div className="flex-col md:flex-row">
-          <Button size="lg" className="mb-3 md:mb-0 md:mr-2">Sign In</Button>
+        <div className="flex flex-col md:flex-row gap-3 md:gap-2">
+          <Button size="lg">Sign In</Button>
           <Button variant="secondary" size="lg">
             Register
           </Button>

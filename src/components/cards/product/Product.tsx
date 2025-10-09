@@ -29,7 +29,7 @@ export const Product: EditableComponent<ProductProps> = ({ productCards }) => {
           />
         ))}
       </div>
-      <Button variant="secondary" className="w-full text-darkGrey">
+      <Button variant="muted" fullWidth>
         Show more
       </Button>
     </div>

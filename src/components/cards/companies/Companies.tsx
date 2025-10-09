@@ -35,7 +35,7 @@ export const Companies: EditableComponent<CompaniesProps> = ({ companyCards }) =
         Get a list of exhibiting companies that can solve your business needs in{" "}
         <Text as="span" color="primary" weight="semibold">Matchmaking</Text>
       </Text>
-      <Button variant="secondary" className="w-full text-darkGrey">
+      <Button variant="muted" fullWidth>
         Show more
       </Button>
     </div>

@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/Button";
+import { IconButton } from "@/components/ui/IconButton";
 import { Image } from "@/components/ui/Image";
 import { Text } from "@/components/ui/Text";
 import favoriteIcon from "@/assets/favoriteIcon.svg";
@@ -13,7 +14,7 @@ export const ProductCard = ({ productName, productImage }: IProductCard) => {
       <Text weight="semibold" size="xxs" className="sm:text-base mb-4">{productName}</Text>
       <div className="flex gap-2 items-end">
         <Button>Interested</Button>
-        <Button variant="secondary" className="w-[34px] h-[32px] lg:w-[46px] lg:h-[40px]"><Image src={favoriteIcon} /></Button>
+        <IconButton variant="secondary" size="md"><Image src={favoriteIcon} /></IconButton>
       </div>
     </div>
   );

@@ -32,7 +32,7 @@ export const Content: EditableComponent<ContentProps> = ({ contentCards }) => {
           />
         ))}
       </div>
-      <Button variant="secondary" className="w-full text-darkGrey">
+      <Button variant="muted" fullWidth>
         Show more
       </Button>
     </div>

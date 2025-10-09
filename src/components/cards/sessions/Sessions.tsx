@@ -29,7 +29,7 @@ export const Sessions: EditableComponent<SessionsProps> = ({ sessionsCards }) =>
           sessionTags={card.sessionTags}
         />
       ))}
-      <Button variant="secondary" className="w-full text-darkGrey">
+      <Button variant="muted" fullWidth>
         Show more
       </Button>
     </div>

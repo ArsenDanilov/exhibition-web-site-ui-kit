@@ -33,7 +33,7 @@ export const Members: EditableComponent<MembersProps> = ({ membersCards }) => {
           />
         ))}
       </div>
-      <Button variant="secondary" className="w-full text-darkGrey">
+      <Button variant="muted" fullWidth>
         Show more
       </Button>
     </div>

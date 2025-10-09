@@ -50,7 +50,7 @@ export const LatestNews: EditableComponent<LatestNewsProps> = ({ newsCards }) =>
         ))}
       </div>
       <div className="px-6 md:px-0">
-        <Button className="w-full">Show more content</Button>
+        <Button fullWidth>Show more content</Button>
       </div>
     </section>
   );

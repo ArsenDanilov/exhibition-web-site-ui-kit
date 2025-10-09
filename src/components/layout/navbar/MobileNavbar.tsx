@@ -46,14 +46,14 @@ export const MobileNavbar = ({ links }: {links: NavbarLink[]}) => {
           <div className="flex flex-col gap-2">
             <Button
               variant="default"
-              className="w-full"
+              fullWidth
               size="lg"
             >
               Sign In
             </Button>
             <Button
               variant="secondary"
-              className="w-full"
+              fullWidth
               size="lg"
             >
               Register
