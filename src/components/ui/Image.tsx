@@ -1,4 +1,4 @@
-import { BaseImage, type BaseImageProps } from "./base/base-image.tsx"
+import { BaseImage, type BaseImageProps } from "./base/base-image"
 
 interface ImageProps extends Omit<BaseImageProps, 'src' | 'alt'> {
     src: string,

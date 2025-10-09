@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/Button";
 import { Link } from "@/components/ui/Link";
 import { Logo } from "@/components/ui/Logo";
-import type {NavbarLink} from "./Navbar.tsx";
+import type {NavbarLink} from "./Navbar";
 
 export const DesktopNavbar = ({ links }: {links: NavbarLink[]}) => {
   return (
@@ -25,4 +25,3 @@ export const DesktopNavbar = ({ links }: {links: NavbarLink[]}) => {
     </nav>
   );
 };
-

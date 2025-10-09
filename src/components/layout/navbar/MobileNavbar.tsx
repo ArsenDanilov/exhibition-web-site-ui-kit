@@ -10,7 +10,7 @@ import { MobileMenuButton } from "./MobileMenuButton";
 import { Button } from "@/components/ui/Button";
 import navbarMenuArrow from "@/assets/navbarMenuArrow.svg"
 import { Link } from "@/components/ui/Link";
-import type {NavbarLink} from "./Navbar.tsx";
+import type {NavbarLink} from "./Navbar";
 
 export const MobileNavbar = ({ links }: {links: NavbarLink[]}) => {
   const [isOpen, setIsOpen] = useState(false);

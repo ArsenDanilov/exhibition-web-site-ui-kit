@@ -1,4 +1,4 @@
-import { BaseLink, type BaseLinkProps } from "./base/base-link.tsx"
+import { BaseLink, type BaseLinkProps } from "./base/base-link"
 
 interface LinkProps extends Omit<BaseLinkProps, 'href'> {
     children?: React.ReactNode,

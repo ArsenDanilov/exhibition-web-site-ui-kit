@@ -1,4 +1,4 @@
-import { BaseText, type BaseTextProps } from "./base/base-text.tsx"
+import { BaseText, type BaseTextProps } from "./base/base-text"
 
 interface TextProps extends BaseTextProps {
     // Existing props (keep for backward compatibility)
