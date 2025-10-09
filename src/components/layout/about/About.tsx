@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/Button";
+import { _Button } from "@/components/ui/_Button";
 import { Image } from "@/components/ui/Image";
 import { Text } from "@/components/ui/Text";
 import { type EditableComponent } from "../../../types";
@@ -37,10 +37,10 @@ export const About: EditableComponent<IAboutProps> = ({ aboutTitle, aboutDescrip
         />
       </div>
         <div className="flex-col md:flex-row">
-          <Button size="lg" className="mb-3 md:mb-0 md:mr-2">Sign In</Button>
-          <Button variant="secondary" size="lg">
+          <_Button size="lg" className="mb-3 md:mb-0 md:mr-2">Sign In</_Button>
+          <_Button variant="secondary" size="lg">
             Register
-          </Button>
+          </_Button>
         </div>
       </div>
       <div className="hidden md:flex items-center justify-end flex-1">

@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/Button";
+import { _Button } from "@/components/ui/_Button";
 import { Image } from "@/components/ui/Image";
 import { Text } from "@/components/ui/Text";
 import connectAppInterface_1 from "@/assets/connectAppInterface_1.png";
@@ -29,9 +29,9 @@ export const Join: EditableComponent<JoinProps> = ({ joinTitle, joinDescription 
           {joinDescription}
         </Text>
         <div className="flex gap-3">
-          <Button size="md">
+          <_Button size="md">
             Join
-          </Button>
+          </_Button>
         </div>
       </div>
       <div className="hidden md:flex items-center justify-center md:flex-1">

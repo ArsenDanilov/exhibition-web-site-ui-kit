@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/Button";
+import { _Button } from "@/components/ui/_Button";
 import { Text } from "@/components/ui/Text";
 import { ProductCard } from "./ProductCard";
 import { type EditableComponent } from "../../../types";
@@ -29,9 +29,9 @@ export const Product: EditableComponent<ProductProps> = ({ productCards }) => {
           />
         ))}
       </div>
-      <Button variant="secondary" className="w-full text-darkGrey">
+      <_Button variant="secondary" className="w-full text-darkGrey">
         Show more
-      </Button>
+      </_Button>
     </div>
   );
 };

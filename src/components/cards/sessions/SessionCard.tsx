@@ -1,6 +1,6 @@
 import { Text } from "@/components/ui/Text";
 import { formatPostTime } from "@/utils/formatPostTime";
-import { Button } from "@/components/ui/Button";
+import { _Button } from "@/components/ui/_Button";
 import { Image } from "@/components/ui/Image";
 import { type ISessionCard } from "./Sessions";
 import favoriteIcon from "@/assets/favoriteIcon.svg";
@@ -31,7 +31,7 @@ export const SessionCard = ({
               </div>
             ))}
         </div>
-        <Button size="xs">Attend</Button>
+        <_Button size="xs">Attend</_Button>
       </div>
       <Image src={favoriteIcon} />
     </div>

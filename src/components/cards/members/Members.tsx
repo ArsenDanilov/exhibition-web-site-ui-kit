@@ -1,6 +1,6 @@
 import { MemberCard } from "./MemberCard";
 import { Text } from "@/components/ui/Text";
-import { Button } from "@/components/ui/Button";
+import { _Button } from "@/components/ui/_Button";
 import { type EditableComponent } from "../../../types";
 import ezhovAvatar from "@/assets/usersAvatars/ezhovAvatar.png"
 import glazkovaAvatar from "@/assets/usersAvatars/glazkovaAvatar.png"
@@ -33,9 +33,9 @@ export const Members: EditableComponent<MembersProps> = ({ membersCards }) => {
           />
         ))}
       </div>
-      <Button variant="secondary" className="w-full text-darkGrey">
+      <_Button variant="secondary" className="w-full text-darkGrey">
         Show more
-      </Button>
+      </_Button>
     </div>
   );
 };

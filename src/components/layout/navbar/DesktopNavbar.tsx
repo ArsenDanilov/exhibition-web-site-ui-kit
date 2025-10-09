@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/Button";
+import { _Button } from "@/components/ui/_Button";
 import { Link } from "@/components/ui/Link";
 import { Logo } from "@/components/ui/Logo";
 import type {NavbarLink} from "./Navbar.tsx";
@@ -19,8 +19,8 @@ export const DesktopNavbar = ({ links }: {links: NavbarLink[]}) => {
         ))}
       </div>
       <div className="hidden lg:flex items-center justify-center gap-2">
-        <Button>Sign In</Button>
-        <Button variant="secondary">Register</Button>
+        <_Button>Sign In</_Button>
+        <_Button variant="secondary">Register</_Button>
       </div>
     </nav>
   );

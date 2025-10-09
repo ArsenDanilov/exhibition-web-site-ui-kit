@@ -5,7 +5,7 @@ export interface ButtonProps extends BaseButtonProps {
   fullWidth?: boolean
 }
 
-const Button = forwardRef<HTMLButtonElement, ButtonProps>(
+const _Button = forwardRef<HTMLButtonElement, ButtonProps>(
   ({ fullWidth, ...props }, ref) => {
     return (
       <BaseButton
@@ -16,6 +16,6 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
     )
   }
 )
-Button.displayName = "Button"
+_Button.displayName = "Button"
 
-export { Button }
+export { _Button }

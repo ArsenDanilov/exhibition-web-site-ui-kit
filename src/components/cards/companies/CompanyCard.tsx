@@ -1,6 +1,6 @@
 import { Text } from "@/components/ui/Text";
 import { Image } from "@/components/ui/Image";
-import { Button } from "@/components/ui/Button";
+import { _Button } from "@/components/ui/_Button";
 import plusIcon from "@/assets/plusIcon.svg";
 import { type ICompanyCard } from "./Companies";
 
@@ -12,7 +12,7 @@ export const CompanyCard = ({ companyLogo, companyName, companyDescription }: IC
                 <Text className="font-semibold mb-1 text-sm lg:text-base">{companyName}</Text>
                 <Text textStyle="xs" className="text-darkGrey">{companyDescription}</Text>
             </div>
-            <Button variant="secondary" size="icon" className="flex justify-center items-center size-[32px] sm:size-[27px] lg:size-[38px] rounded-full"><Image src={plusIcon} /></Button>
+            <_Button variant="secondary" size="icon" className="flex justify-center items-center size-[32px] sm:size-[27px] lg:size-[38px] rounded-full"><Image src={plusIcon} /></_Button>
         </div>
     )
 }

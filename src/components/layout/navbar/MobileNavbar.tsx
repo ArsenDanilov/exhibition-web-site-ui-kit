@@ -7,7 +7,7 @@ import {
   SheetOverlay,
 } from "@/components/ui/sheet";
 import { MobileMenuButton } from "./MobileMenuButton";
-import { Button } from "@/components/ui/Button";
+import { _Button } from "@/components/ui/_Button";
 import navbarMenuArrow from "@/assets/navbarMenuArrow.svg"
 import { Link } from "@/components/ui/Link";
 import type {NavbarLink} from "./Navbar.tsx";
@@ -42,20 +42,20 @@ export const MobileNavbar = ({ links }: {links: NavbarLink[]}) => {
             ))}
           </div>
           <div className="flex flex-col gap-2">
-            <Button
+            <_Button
               variant="default"
               className="w-full"
               size="lg"
             >
               Sign In
-            </Button>
-            <Button
+            </_Button>
+            <_Button
               variant="secondary"
               className="w-full"
               size="lg"
             >
               Register
-            </Button>
+            </_Button>
           </div>
         </SheetContent>
       </Sheet>

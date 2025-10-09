@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/Button";
+import { _Button } from "@/components/ui/_Button";
 import { Text } from "@/components/ui/Text";
 import { NewsCard } from "./NewsCard";
 import { formatPostTime } from "@/utils/formatPostTime";
@@ -49,7 +49,7 @@ export const LatestNews: EditableComponent<LatestNewsProps> = ({ newsCards }) =>
         ))}
       </div>
       <div className="px-6 md:px-0">
-        <Button className="w-full">Show more content</Button>
+        <_Button className="w-full">Show more content</_Button>
       </div>
     </section>
   );
