@@ -1,11 +1,20 @@
-interface LinkProps {
+import { BaseLink, type BaseLinkProps } from "./base/base-link.tsx"
+
+interface LinkProps extends Omit<BaseLinkProps, 'href'> {
     children?: React.ReactNode,
-    href: string, 
-    className?: string
+    href: string,
+    className?: string,
+    external?: boolean
 }
 
 export const Link = ({ children, href, className, ...props }: LinkProps) => {
     return (
-        <a href={href} className={className} {...props}>{children}</a>
+        <BaseLink
+            href={href}
+            className={className}
+            {...props}
+        >
+            {children}
+        </BaseLink>
     )
 }

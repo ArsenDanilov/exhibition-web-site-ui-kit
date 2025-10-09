@@ -1,50 +1,15 @@
-import * as React from "react"
-import { Slot } from "@radix-ui/react-slot"
-import { cva, type VariantProps } from "class-variance-authority"
-import { cn } from "../../lib/utils"
+import { forwardRef } from "react"
+import { BaseButton, type BaseButtonProps } from "./base/base-button.tsx"
 
-const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-[10px] text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
-  {
-    variants: {
-      variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary-hover disabled:bg-primary-disabled",
-        secondary: "bg-secondary text-secondary-foreground hover:bg-secondary-hover disabled:bg-secondary-disabled",
-        destructive:
-          "bg-destructive text-destructive-foreground hover:bg-destructive/90",
-        outline:
-          "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
-        ghost: "hover:bg-accent hover:text-accent-foreground",
-        link: "text-primary underline-offset-4 hover:underline",
-      },
-      size: {
-        default: "w-[87px] h-[32px] text-[11px] lg:w-[130px] lg:h-[40px]",
-        xs: "w-[100px] h-[35px] sm:w-[84px] sm:h-[29px] lg:w-[117px] lg:h-[40px]",
-        sm: "w-[122px] h-[46px]",
-        md: "w-full h-[40px] sm:w-[144px] sm:h-[32px] lg:w-[200px] lg:h-[46px]",
-        lg: "w-full h-[40px] md:w-[156px] md:h-[32px] xl:w-[220px] xl:h-[44px] text-[16px] md:text-[12px] xl:text-[16px]",
-        icon: "h-[38px] w-[38px]",
-      },
-    },
-    defaultVariants: {
-      variant: "default",
-      size: "default",
-    },
-  }
-)
-
-export interface ButtonProps
-  extends React.ButtonHTMLAttributes<HTMLButtonElement>,
-    VariantProps<typeof buttonVariants> {
-  asChild?: boolean
+export interface ButtonProps extends BaseButtonProps {
+  fullWidth?: boolean
 }
 
-const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className, variant, size, asChild = false, ...props }, ref) => {
-    const Comp = asChild ? Slot : "button"
+const Button = forwardRef<HTMLButtonElement, ButtonProps>(
+  ({ fullWidth, ...props }, ref) => {
     return (
-      <Comp
-        className={cn(buttonVariants({ variant, size, className }))}
+      <BaseButton
+        fullWidth={fullWidth}
         ref={ref}
         {...props}
       />
@@ -53,4 +18,4 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
 )
 Button.displayName = "Button"
 
-export { Button, buttonVariants }
+export { Button }
