@@ -3,6 +3,7 @@ import { Text } from "@/components/ui/Text";
 import likeIcon from "@/assets/likeIcon.svg";
 import commentIcon from "@/assets/commentIcon.svg";
 import { type INewsCard } from "./LatestNews";
+import {Link} from "@/components/ui/Link";
 
 export const NewsCard = ({
   username,
@@ -27,9 +28,9 @@ export const NewsCard = ({
         </div>
       </div>
       <Text>{text}</Text>
-      <Button className="font-semibold text-primary mb-4">
+      <Link href="#" variant="primary" size="md" weight="semibold" className="mb-4 inline-block">
         Показать больше
-      </Button>
+      </Link>
       
       {images && (
         <Image src={images} alt="image from post" className="mb-4" />

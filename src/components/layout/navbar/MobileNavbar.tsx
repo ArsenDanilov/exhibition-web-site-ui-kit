@@ -34,7 +34,9 @@ export const MobileNavbar = ({ links }: {links: NavbarLink[]}) => {
               <Link
                 key={link.href}
                 href={link.href}
-                className="w-full flex justify-between items-center px-4 py-3 text-black70 hover:bg-gray-200 rounded-lg transition-colors"
+                variant="default"
+                size="sm"
+                className="w-full flex justify-between items-center px-4 py-3 hover:bg-gray-200 rounded-lg transition-colors"
               >
                 {link.text}
                 <img src={navbarMenuArrow} alt="navbar menu arrow" />

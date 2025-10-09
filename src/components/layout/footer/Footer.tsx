@@ -18,10 +18,14 @@ export const Footer: EditableComponent<FooterProps> = ({ links }) => {
       <Logo className="mb-6 md:mb-0" />
       <div className="flex flex-col md:flex-row justify-center gap-5">
         {links.map((link) => (
-          <Link href={link.href} key={link.href}>
-            <Text className="text-center md:text-xs md:text-end lg:text-sm text-black30">
-              {link.title}
-            </Text>
+          <Link 
+            href={link.href} 
+            key={link.href}
+            variant="muted"
+            size="xs"
+            className="text-center md:text-end"
+          >
+            {link.title}
           </Link>
         ))}
       </div>

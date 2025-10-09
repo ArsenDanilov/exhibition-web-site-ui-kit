@@ -2,6 +2,7 @@ import { Text } from "@/components/ui/Text";
 import { formatPostTime } from "@/utils/formatPostTime";
 import { Button } from "@/components/ui/Button";
 import { Image } from "@/components/ui/Image";
+import { Link } from "@/components/ui/Link";
 import { type ISessionCard } from "./Sessions";
 import favoriteIcon from "@/assets/favoriteIcon.svg";
 
@@ -19,7 +20,9 @@ export const SessionCard = ({
           <span className="font-normal">{formatPostTime(sessionPostedAt)}</span>
         </Text>
         <Text className="mb-1">{sessionDescription}</Text>
-        <Button className="text-primary mb-4 font-semibold">Show more</Button>
+        <Link href="#" variant="primary" size="md" weight="semibold" className="mb-4 inline-block">
+          Show more
+        </Link>
         <div className="flex gap-2 mb-4 flex-wrap">
           {sessionTags &&
             sessionTags.map((tag, index) => (

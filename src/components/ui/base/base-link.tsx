@@ -1,6 +1,6 @@
 import * as React from "react"
 import { cva, type VariantProps } from "class-variance-authority"
-import { cn } from "@/lib/utils.ts"
+import { cn } from "@/lib/utils"
 
 const linkVariants = cva(
     "transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
@@ -8,20 +8,27 @@ const linkVariants = cva(
         variants: {
             variant: {
                 default: "text-black70 hover:text-black",
-                nav: "text-black70 hover:text-black sm:text-xs lg:text-sm",
-                mobileNav: "w-full flex justify-between items-center px-4 py-3 text-black70 hover:bg-gray-200 rounded-lg",
-                footer: "text-black30 hover:text-black70",
+                muted: "text-black30 hover:text-black70",
+                primary: "text-primary font-semibold hover:text-primary/80",
                 unstyled: "",
             },
             size: {
-                sm: "text-xs",
-                md: "text-sm",
-                lg: "text-base",
+                xs: "text-xs",
+                sm: "text-sm",
+                md: "text-base",
+                lg: "text-lg",
+            },
+            weight: {
+                normal: "font-normal",
+                medium: "font-medium",
+                semibold: "font-semibold",
+                bold: "font-bold",
             }
         },
         defaultVariants: {
             variant: "default",
-            size: "md",
+            size: "sm",
+            weight: "normal",
         },
     }
 )
@@ -33,7 +40,7 @@ export interface BaseLinkProps
 }
 
 const BaseLink = React.forwardRef<HTMLAnchorElement, BaseLinkProps>(
-    ({ className, variant, size, external, ...props }, ref) => {
+    ({ className, variant, size, weight, external, ...props }, ref) => {
         const externalProps = external ? {
             target: "_blank",
             rel: "noopener noreferrer"
@@ -41,7 +48,7 @@ const BaseLink = React.forwardRef<HTMLAnchorElement, BaseLinkProps>(
 
         return (
             <a
-                className={cn(linkVariants({ variant, size, className }))}
+                className={cn(linkVariants({ variant, size, weight, className }))}
                 ref={ref}
                 {...externalProps}
                 {...props}

@@ -1,9 +1,9 @@
 import { BaseLink, type BaseLinkProps } from "./base/base-link"
 
-interface LinkProps extends Omit<BaseLinkProps, 'href'> {
-    children?: React.ReactNode,
-    href: string,
-    className?: string,
+interface LinkProps extends BaseLinkProps {
+    children?: React.ReactNode
+    href: string
+    className?: string
     external?: boolean
 }
 
