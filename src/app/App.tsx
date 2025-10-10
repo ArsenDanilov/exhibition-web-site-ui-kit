@@ -14,7 +14,7 @@ import { Container } from "@/components/ui/Container";
 function App() {
   return (
     <>
-      <Container background="bg-grey">
+      <Container>
         <Navbar {...Navbar.schema.getDefaultProps()} />
         <About {...About.schema.getDefaultProps()} />
         <MainSection />
