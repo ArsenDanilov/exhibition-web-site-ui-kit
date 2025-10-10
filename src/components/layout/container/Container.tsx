@@ -4,7 +4,7 @@ interface ContainerProps {
 
 export const Container = ({ children }: ContainerProps) => {
     return (
-        <div className="px-4 pt-5 pb-0 bg-grey">
+        <div className="sm:px-4 sm:pt-5 pb-0 bg-grey">
             {children}
         </div>
     )

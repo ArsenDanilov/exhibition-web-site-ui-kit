@@ -74,7 +74,7 @@ LatestNews.schema = {
         username: "Валерия Глазкова",
         avatar: glazkovaAvatar,
         postedAt: "2025-06-25T17:06:56.789Z",
-        text: "#WorldFoodSummit&НильсенАкадемия#WorldFoodSummit. 🔥 Уважаемые участники бизнес-сообщества! 🔥 Собираем для вас в одном посте эксклюзивные материалы с WorldFood Summit & Нильсен Академии.",
+        text: "#WorldFoodSummit&НильсенАкадемия #WorldFoodSummit. 🔥 Уважаемые участники бизнес-сообщества! 🔥 Собираем для вас в одном посте эксклюзивные материалы с WorldFood Summit & Нильсен Академии.",
         images: glazkovaPostImage,
         likes: 11,
         comments: 444,

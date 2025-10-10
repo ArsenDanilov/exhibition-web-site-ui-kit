@@ -9,7 +9,7 @@ import { Content } from "../components/cards/content/Content";
 import { Members } from "../components/cards/members/Members";
 import { Product } from "../components/cards/product/Product";
 import { Companies } from "../components/cards/companies/Companies";
-import { Container } from "@/components/ui/Container";
+import { Container } from "@/components/layout/container/Container";
 
 function App() {
   return (
