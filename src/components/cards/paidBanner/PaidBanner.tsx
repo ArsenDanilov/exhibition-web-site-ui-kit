@@ -9,7 +9,7 @@ interface PaidBannerProps {
 export const PaidBanner: EditableComponent<PaidBannerProps> = ({ banner }) => {
     return (
         <div>
-            <Image src={banner} alt="banner with AD"/>
+            <Image src={banner} alt="banner with AD" size="full" />
         </div>
     )
 }
