@@ -8,26 +8,26 @@ import {
 } from "@/components/ui/base/sheet";
 import { MobileMenuButton } from "./MobileMenuButton";
 import { Button } from "@/components/ui/Button";
-import navbarMenuArrow from "@/assets/navbarMenuArrow.svg"
+import navbarMenuArrow from "@/assets/navbarMenuArrow.svg";
 import { Link } from "@/components/ui/Link";
-import type {NavbarLink} from "./Navbar";
+import type { NavbarLink } from "./Navbar";
 
-export const MobileNavbar = ({ links }: {links: NavbarLink[]}) => {
+export const MobileNavbar = ({ links }: { links: NavbarLink[] }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <nav className="md:hidden bg-white rounded-b-3xl">
       <Sheet open={isOpen} onOpenChange={setIsOpen}>
-        <div className="flex items-center justify-between px-7 py-5 rounded-b-3xl mb-9">
+        <div className="z-10 relative flex items-center justify-between px-7 py-5 rounded-b-3xl mb-9">
           <Logo />
           <SheetTrigger>
             <MobileMenuButton isOpen={isOpen} />
           </SheetTrigger>
         </div>
-        <SheetOverlay className="bg-grey" />
+        <SheetOverlay className="bg-red-500" asChild/>
         <SheetContent
           side="top"
-          className="rounded-xl py-1 mx-auto w-[calc(100vw-2*3rem)] px-2"
+          className="rounded-xl py-1 mx-auto px-7"
         >
           <div className="mb-5 bg-background rounded-2xl">
             {links.map((link) => (
