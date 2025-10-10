@@ -9,26 +9,18 @@ import { Content } from "../components/cards/content/Content";
 import { Members } from "../components/cards/members/Members";
 import { Product } from "../components/cards/product/Product";
 import { Companies } from "../components/cards/companies/Companies";
-
+import { Container } from "@/components/ui/Container";
 
 function App() {
   return (
     <>
-      <div>
+      <Container background="bg-grey">
         <Navbar {...Navbar.schema.getDefaultProps()} />
-        {/* <About {...About.schema.getDefaultProps()} /> */}
-        {/* <MainSection />
+        <About {...About.schema.getDefaultProps()} />
+        <MainSection />
         <Join {...Join.schema.getDefaultProps()} />
-        <Footer {...Footer.schema.getDefaultProps()} /> */}
-        {/* <LatestNews {...LatestNews.schema.getDefaultProps()} /> */}
-        {/* <Sessions {...Sessions.schema.getDefaultProps()}/> */}
-        {/* <Content {...Content.schema.getDefaultProps()} /> */}
-        {/* <Members {...Members.schema.getDefaultProps()} /> */}
-        {/* <Product {...Product.schema.getDefaultProps()} /> */}
-        {/* <Companies {...Companies.schema.getDefaultProps()} /> */}
-        {/* <Join {...Join.schema.getDefaultProps()} /> */}
-        {/* <Footer {...Footer.schema.getDefaultProps()} /> */}
-      </div>
+        <Footer {...Footer.schema.getDefaultProps()} />
+      </Container>
     </>
   );
 }

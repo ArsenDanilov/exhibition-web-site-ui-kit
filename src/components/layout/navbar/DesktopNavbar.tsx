@@ -5,7 +5,7 @@ import type {NavbarLink} from "./Navbar";
 
 export const DesktopNavbar = ({ links }: {links: NavbarLink[]}) => {
   return (
-    <nav className="hidden items-center justify-between py-[18px] px-[25px] rounded-3xl md:flex md:px-[80px] mdl:px-[108px] lg:px-[24px] ">
+    <nav className="hidden !bg-white items-center justify-between py-[18px] px-[25px] rounded-3xl md:flex md:px-[80px] mdl:px-[108px] lg:px-[24px] ">
       <Logo />
       <div className="flex items-center gap-6">
         {links.map((link) => (

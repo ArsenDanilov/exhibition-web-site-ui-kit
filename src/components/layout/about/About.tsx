@@ -15,7 +15,7 @@ interface IAboutProps {
 
 export const About: EditableComponent<IAboutProps> = ({ aboutTitle, aboutDescription, aboutBanner }) => {
   return (
-    <section className="rounded-3xl px-[24px] py-[35px] flex flex-col md:flex-row md:p-[30px] lg:px-[40px] lg:py-[50px]  lg:gap-5">
+    <section className="mb-5 rounded-3xl !bg-white px-[24px] py-[35px] flex flex-col md:flex-row md:p-[30px] lg:px-[40px] lg:py-[50px]  lg:gap-5">
       <div className="flex-1">
         <Text
           as="h1"

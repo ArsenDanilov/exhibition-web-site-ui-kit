@@ -87,6 +87,8 @@
 
     --radius: 0.5rem;
 
+    --block-margin: 20px
+
     /* Mobile text sizes (base) */
     --text-xs: 0.75rem;    /* 12px */
     --text-sm: 0.8125rem;  /* 13px */

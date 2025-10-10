@@ -13,9 +13,8 @@ interface NavbarProps {
 }
 
 export const Navbar: EditableComponent<NavbarProps> = ({links}) => {
-    console.log('dfdfgdf',links)
     return (
-        <div>
+        <div className='mb-5'>
             <DesktopNavbar links={links}/>
             <MobileNavbar links={links}/>
         </div>

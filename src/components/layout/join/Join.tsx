@@ -15,7 +15,7 @@ interface JoinProps {
 
 export const Join: EditableComponent<JoinProps> = ({ joinTitle, joinDescription }) => {
   return (
-    <section className="bg-black px-6 py-9 md:px-14 md:py-16 lg:px-20 lg:py-[90px] flex gap-5 text-white rounded-3xl relative">
+    <section className="mb-9 bg-black px-6 py-9 md:px-14 md:py-16 lg:px-20 lg:py-[90px] flex gap-5 text-white rounded-3xl relative">
       <div className="md:flex-1">
         <Image
           src={joinIcons}
