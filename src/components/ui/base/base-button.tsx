@@ -13,9 +13,9 @@ const buttonVariants = cva(
         muted: "bg-secondary text-darkGrey hover:bg-secondary-hover disabled:bg-secondary-disabled",
       },
       size: {
-        xs: "w-24 h-9 sm:w-20 sm:h-7 lg:w-28 lg:h-10",
+        xs: "w-24 h-9 sm:w-20 sm:h-8 lg:w-28 lg:h-10 md:text-xs lg:text-base",
         md: "w-full h-10 sm:w-36 sm:h-8 lg:w-48 lg:h-11",
-        lg: "w-full h-10 md:w-40 md:h-8 xl:w-52 xl:h-11 text-base md:text-xs xl:text-base",
+        lg: "w-full h-10 md:w-40 md:h-8 xl:w-52 xl:h-11 text-base sm:text-xs xl:text-base",
       },
       fullWidth: {
         true: "!w-full",

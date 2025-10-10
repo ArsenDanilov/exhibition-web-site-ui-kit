@@ -5,9 +5,9 @@ import { type IMemberCard } from "./Members";
 export const MemberCard = ({ memberAvatar, memberName, memberCompany }: IMemberCard) => {
   return (
     <div className="flex flex-col justify-center">
-        <Image src={memberAvatar} alt="user avatar" className="mb-3 size-[71px] lg:size-[100px] mx-auto" />
-        <Text size="sm" className="mb-1 text-center w-[100%]">{memberName}</Text>
-        <Text size="xs" color="muted" className="text-center">{memberCompany}</Text>
+        <Image src={memberAvatar} alt="user avatar" className="mb-3 mx-auto" />
+        <Text size="xxs" className="mb-1 text-center w-[100%]">{memberName}</Text>
+        <Text size="xxs" color="muted" className="text-center">{memberCompany}</Text>
     </div>
   )
 };

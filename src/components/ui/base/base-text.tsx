@@ -7,6 +7,7 @@ const textVariants = cva(
   {
     variants: {
       size: {
+        xxxs: "text-[10px]",
         xxs: "text-[11px]",
         xs: "text-xs",
         sm: "text-sm",

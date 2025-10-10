@@ -26,7 +26,7 @@ interface LatestNewsProps {
 
 export const LatestNews: EditableComponent<LatestNewsProps> = ({ newsCards }) => {
   return (
-    <section className="md:w-[60%]">
+    <section className="md:w-[55%]">
       <Text
         as="h2"
         size="xl"
