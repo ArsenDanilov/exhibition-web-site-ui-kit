@@ -14,7 +14,7 @@ interface FooterProps {
 
 export const Footer: EditableComponent<FooterProps> = ({ links }) => {
   return (
-    <footer className="px-10 pt-8 pb-25 md:pt-5 md:pb-4 md:px-7 lg:pt-7 lg:pb-6 lg:px-11 flex flex-col md:flex-row justify-between items-center border border-black12 rounded-t-3xl">
+    <footer className="px-10 pt-8 pb-25 md:pt-5 md:pb-4 md:px-7 lg:pt-7 lg:pb-6 lg:px-11 flex flex-col md:flex-row justify-between items-center border border-black-12 rounded-t-3xl">
       <Logo className="mb-6 md:mb-0" />
       <div className="flex flex-col md:flex-row justify-center gap-5">
         {links.map((link) => (

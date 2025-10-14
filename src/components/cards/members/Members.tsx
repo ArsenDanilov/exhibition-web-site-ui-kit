@@ -19,7 +19,7 @@ interface MembersProps {
 
 export const Members: EditableComponent<MembersProps> = ({ membersCards }) => {
   return (
-    <div className="hidden sm:block px-6 py-4 sm:px-5 sm:py-3 lg:px-7 lg:py-5 rounded-3xl border border-black12">
+    <div className="hidden sm:block px-6 py-4 sm:px-5 sm:py-3 lg:px-7 lg:py-5 rounded-3xl border border-black-12">
       <Text as="h2" size="xl" weight="semibold" className="mb-5">
         Members
       </Text>

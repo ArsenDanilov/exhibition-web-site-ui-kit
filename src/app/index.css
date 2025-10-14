@@ -73,6 +73,9 @@
   --color-chart-5: hsl(27 87% 67%);
 
   /* Typography scale → text-xs|sm|base|md|lg|xl|2xl */
+
+  --text-xxs: 0.625rem;
+  /* 10px */
   --text-xs: 0.75rem;
   /* 12px */
   --text-sm: 0.8125rem;

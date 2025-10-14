@@ -16,7 +16,7 @@ export const MobileNavbar = ({ links }: { links: NavbarLink[] }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="md:hidden bg-white rounded-b-3xl">
+    <nav className="md:hidden bg-white rounded-b-3xl transition-all">
       <Sheet open={isOpen} onOpenChange={setIsOpen}>
         <div className="z-10 relative flex items-center justify-between px-7 py-5 rounded-b-3xl mb-9">
           <Logo />
@@ -24,7 +24,7 @@ export const MobileNavbar = ({ links }: { links: NavbarLink[] }) => {
             <MobileMenuButton isOpen={isOpen} />
           </SheetTrigger>
         </div>
-        <SheetOverlay className="bg-red-500" asChild/>
+        <SheetOverlay asChild/>
         <SheetContent
           side="top"
           className="rounded-xl py-1 mx-auto px-7"

@@ -5,8 +5,8 @@ import { Image } from "@/components/ui/Image";
 import { Link } from "@/components/ui/Link";
 import { type ISessionCard } from "./Sessions";
 import favoriteIcon from "@/assets/favoriteIcon.svg";
-import favoriteIconTablet from "@/assets/favoriteIconTablet.svg"
-import favoriteIconMobile from "@/assets/favoriteIconMobile.svg"
+import favoriteIconTablet from "@/assets/favoriteIconTablet.svg";
+import favoriteIconMobile from "@/assets/favoriteIconMobile.svg";
 
 export const SessionCard = ({
   sessionTitle,
@@ -19,10 +19,18 @@ export const SessionCard = ({
       <div>
         <Text weight="semibold" className="mb-2">
           {sessionTitle}&nbsp;|{" "}
-          <Text as="span" weight="normal">{formatPostTime(sessionPostedAt)}</Text>
+          <Text as="span" weight="normal">
+            {formatPostTime(sessionPostedAt)}
+          </Text>
         </Text>
         <Text className="mb-1">{sessionDescription}</Text>
-        <Link href="#" variant="primary" size="md" weight="semibold" className="mb-4 inline-block">
+        <Link
+          href="#"
+          variant="primary"
+          size="md"
+          weight="semibold"
+          className="mb-4 inline-block"
+        >
           Show more
         </Link>
         <div className="flex gap-2 mb-4 flex-wrap">
@@ -30,7 +38,7 @@ export const SessionCard = ({
             sessionTags.map((tag, index) => (
               <div
                 key={index}
-                className="bg-lightGrey text-darkGrey rounded-full text-xxs px-2 py-1 sm:px-2 lg:px-3 flex justify-center items-center"
+                className="bg-light-grey text-dark-grey rounded-full text-xxs px-2 py-1 sm:px-2 lg:px-3 flex justify-center items-center"
               >
                 {tag}
               </div>
@@ -38,9 +46,9 @@ export const SessionCard = ({
         </div>
         <Button size="xs">Attend</Button>
       </div>
-      <Image src={favoriteIcon} className="hidden lg:block"/>
+      <Image src={favoriteIcon} className="hidden lg:block" />
       <Image src={favoriteIconTablet} className="hidden sm:block lg:hidden" />
-      <Image src={favoriteIconMobile} className="block sm:hidden"/>
+      <Image src={favoriteIconMobile} className="block sm:hidden" />
     </div>
   );
 };

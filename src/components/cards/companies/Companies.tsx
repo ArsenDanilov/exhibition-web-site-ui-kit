@@ -18,7 +18,7 @@ interface CompaniesProps {
 
 export const Companies: EditableComponent<CompaniesProps> = ({ companyCards }) => {
   return (
-    <div className="px-6 py-4 sm:px-5 sm:py-3 lg:px-7 lg:py-5 rounded-3xl sm:border border-black12">
+    <div className="px-6 py-4 sm:px-5 sm:py-3 lg:px-7 lg:py-5 rounded-3xl sm:border border-black-12">
       <Text as="h2" size="xl" weight="semibold" className="mb-5">
         Companies
       </Text>
