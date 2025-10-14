@@ -15,7 +15,7 @@ export const NewsCard = ({
   comments,
 }: INewsCard) => {
   return (
-    <div className="sm:px-3 sm:py-4 lg:px-4 lg:py-5 rounded-3xl mb-5 md:border border-black30">
+    <div className="sm:px-3 sm:py-4 lg:px-4 lg:py-5 rounded-3xl mb-5 md:border border-black12">
       <div className="pt-3 px-3 sm:pt-0 sm:px-0 flex gap-3 items-center mb-4">
         <div>
           <Image src={avatar} alt="user avatar" className="size-[50px]"/>

@@ -18,7 +18,7 @@ interface ContentProps {
 
 export const Content: EditableComponent<ContentProps> = ({ contentCards }) => {
   return (
-    <div className="hidden sm:block sm:px-5 sm:py-3 lg:px-7 lg:py-5 rounded-3xl border border-black30">
+    <div className="hidden sm:block sm:px-5 sm:py-3 lg:px-7 lg:py-5 rounded-3xl border border-black12">
       <Text as="h2" size="xl" weight="semibold" className="sm:mb-4 lg:mb-5">
         Content
       </Text>
