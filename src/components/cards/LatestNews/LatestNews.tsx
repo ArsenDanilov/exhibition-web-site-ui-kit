@@ -26,7 +26,7 @@ interface LatestNewsProps {
 
 export const LatestNews: EditableComponent<LatestNewsProps> = ({ newsCards }) => {
   return (
-    <section className="!bg-white py-9 rounded-3xl sm:py-0 sm:rounded-none sm:!bg-transparent md:w-[55%]">
+    <section className="bg-white! py-9 rounded-3xl sm:py-0 sm:rounded-none sm:bg-transparent! md:w-[55%]">
       <Text
         as="h2"
         size="xl"

@@ -8,7 +8,7 @@ import { Companies } from "../companies/Companies";
 
 export const HelpfullWidgets = () => {
   return (
-    <aside className="!bg-white rounded-3xl py-9 sm:py-0 sm:!bg-transparent sm:rounded-none sm:w-[45%]">
+    <aside className="bg-white! rounded-3xl py-9 sm:py-0 sm:bg-transparent! sm:rounded-none sm:w-[45%]">
       <Text
         as="h2"
         size="xl"

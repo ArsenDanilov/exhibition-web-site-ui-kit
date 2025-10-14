@@ -4,13 +4,13 @@ import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "@/lib/utils"
 
 const iconButtonVariants = cva(
-  "inline-flex items-center justify-center rounded-xl text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
+  "inline-flex items-center justify-center rounded-xl text-sm font-medium ring-offset-background transition-colors focus-visible:outline-hidden focus-visible:ring-3 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
   {
     variants: {
       variant: {
         default: "bg-primary text-primary-foreground hover:bg-primary-hover disabled:bg-primary-disabled",
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary-hover disabled:bg-secondary-disabled",
-        muted: "bg-secondary text-darkGrey hover:bg-secondary-hover disabled:bg-secondary-disabled",
+        muted: "bg-secondary text-dark-grey hover:bg-secondary-hover disabled:bg-secondary-disabled",
       },
       size: {
         xs: "w-9 h-9 sm:w-7 sm:h-7 lg:w-10 lg:h-10",
