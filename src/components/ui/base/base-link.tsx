@@ -3,12 +3,12 @@ import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "@/lib/utils"
 
 const linkVariants = cva(
-    "transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
+    "transition-colors focus-visible:outline-hidden focus-visible:ring-3 focus-visible:ring-ring focus-visible:ring-offset-2",
     {
         variants: {
             variant: {
-                default: "text-black70 hover:text-black",
-                muted: "text-black30 hover:text-black70",
+                default: "text-black-70 hover:text-black",
+                muted: "text-black-30 hover:text-black-70",
                 primary: "text-primary font-semibold hover:text-primary/80",
                 unstyled: "",
             },

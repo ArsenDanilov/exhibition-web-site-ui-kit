@@ -33,8 +33,8 @@ const textVariants = cva(
         secondary: "text-secondary",
         destructive: "text-destructive",
         white: "text-white",
-        darkGrey: "text-darkGrey",
-        black70: "text-black70",
+        darkGrey: "text-dark-grey",
+        black70: "text-black-70",
       },
     },
     defaultVariants: {

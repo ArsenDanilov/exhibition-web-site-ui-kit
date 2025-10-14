@@ -15,19 +15,19 @@ interface IAboutProps {
 
 export const About: EditableComponent<IAboutProps> = ({ aboutTitle, aboutDescription, aboutBanner }) => {
   return (
-    <section className="mb-5 rounded-3xl !bg-white px-[24px] py-[35px] flex flex-col md:flex-row md:p-[30px] lg:px-[40px] lg:py-[50px]  lg:gap-5">
+    <section className="mb-5 rounded-3xl bg-white! px-[24px] py-[35px] flex flex-col md:flex-row md:p-[30px] lg:px-[40px] lg:py-[50px]  lg:gap-5">
       <div className="flex-1">
         <Text
           as="h1"
           size="2xl"
           weight="bold"
-          className="leading-[114.99%] mb-4 w-[100%] md:w-[90%] lg:w-3/4"
+          className="leading-[114.99%] mb-4 w-full md:w-[90%] lg:w-3/4"
         >
           {aboutTitle}
         </Text>
         <Text
           weight="normal"
-          className="mb-10 leading-6 tracking-normal w-[100%] md:w-[90%] lg:w-3/4"
+          className="mb-10 leading-6 tracking-normal w-full md:w-[90%] lg:w-3/4"
         >
           {aboutDescription}
         </Text>

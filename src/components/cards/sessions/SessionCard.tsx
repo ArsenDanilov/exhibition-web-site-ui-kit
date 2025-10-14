@@ -15,7 +15,7 @@ export const SessionCard = ({
   sessionTags,
 }: ISessionCard) => {
   return (
-    <div className="p-3 lg:px-4 lg:py-5 bg-lightPink mb-5 rounded-2xl flex items-start gap-5 justify-between">
+    <div className="p-3 lg:px-4 lg:py-5 bg-light-pink mb-5 rounded-2xl flex items-start gap-5 justify-between">
       <div>
         <Text weight="semibold" className="mb-2">
           {sessionTitle}&nbsp;|{" "}
