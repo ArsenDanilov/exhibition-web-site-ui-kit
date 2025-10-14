@@ -20,7 +20,7 @@ export const Companies: EditableComponent<CompaniesProps> = ({ companyCards }) =
   return (
     <div className="px-6 py-4 sm:px-5 sm:py-3 lg:px-7 lg:py-5 rounded-3xl sm:border border-black30">
       <Text as="h2" size="xl" weight="semibold" className="mb-5">
-        Content
+        Companies
       </Text>
       <div className="mb-5">
         {companyCards.map((card) => (

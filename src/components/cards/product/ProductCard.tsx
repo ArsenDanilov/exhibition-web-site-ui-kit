@@ -3,6 +3,7 @@ import { IconButton } from "@/components/ui/IconButton";
 import { Image } from "@/components/ui/Image";
 import { Text } from "@/components/ui/Text";
 import favoriteIcon from "@/assets/favoriteIcon.svg";
+import favoriteIconTablet from "@/assets/favoriteIconTablet.svg"
 import { type IProductCard } from "./Product";
 
 export const ProductCard = ({ productName, productImage }: IProductCard) => {
@@ -13,8 +14,11 @@ export const ProductCard = ({ productName, productImage }: IProductCard) => {
       </div>
       <Text weight="semibold" size="xxs" className="mb-4 line-clamp-2 overflow-hidden text-ellipsis">{productName}</Text>
       <div className="flex gap-2 items-end">
-        <Button>Interested</Button>
-        <IconButton variant="secondary" size="md"><Image src={favoriteIcon} /></IconButton>
+        <Button size="xs">Interested</Button>
+        <IconButton variant="secondary" size="md">
+          <Image src={favoriteIcon} className="hidden lg:block" />
+          <Image src={favoriteIconTablet} className="sm:block lg:hidden" />
+        </IconButton>
       </div>
     </div>
   );

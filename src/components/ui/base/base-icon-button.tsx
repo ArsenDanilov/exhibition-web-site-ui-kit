@@ -13,8 +13,8 @@ const iconButtonVariants = cva(
         muted: "bg-secondary text-darkGrey hover:bg-secondary-hover disabled:bg-secondary-disabled",
       },
       size: {
-        xs: "w-9 h-9 sm:w-7 sm:h-7 lg:w-10 lg:h-10",
-        md: "w-10 h-10 sm:w-8 sm:h-8 lg:w-10 lg:h-10",
+        xs: "size-8 sm:size-7 lg:size-10",
+        md: "size-8 lg:size-10",
         lg: "w-10 h-10 md:w-8 md:h-8 xl:w-10 xl:h-10",
       },
       shape: {

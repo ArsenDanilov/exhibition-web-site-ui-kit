@@ -5,6 +5,8 @@ import { Image } from "@/components/ui/Image";
 import { Link } from "@/components/ui/Link";
 import { type ISessionCard } from "./Sessions";
 import favoriteIcon from "@/assets/favoriteIcon.svg";
+import favoriteIconTablet from "@/assets/favoriteIconTablet.svg"
+import favoriteIconMobile from "@/assets/favoriteIconMobile.svg"
 
 export const SessionCard = ({
   sessionTitle,
@@ -36,7 +38,9 @@ export const SessionCard = ({
         </div>
         <Button size="xs">Attend</Button>
       </div>
-      <Image src={favoriteIcon} />
+      <Image src={favoriteIcon} className="hidden lg:block"/>
+      <Image src={favoriteIconTablet} className="hidden sm:block lg:hidden" />
+      <Image src={favoriteIconMobile} className="block sm:hidden"/>
     </div>
   );
 };

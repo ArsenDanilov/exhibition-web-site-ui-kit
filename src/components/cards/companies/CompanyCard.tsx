@@ -2,6 +2,8 @@ import { Text } from "@/components/ui/Text";
 import { Image } from "@/components/ui/Image";
 import { IconButton } from "@/components/ui/IconButton";
 import plusIcon from "@/assets/plusIcon.svg";
+import plusIconMobile from "@/assets/plusIconMobile.svg";
+import plusIconTablet from "@/assets/plusIconTablet.svg";
 import { type ICompanyCard } from "./Companies";
 
 export const CompanyCard = ({ companyLogo, companyName, companyDescription }: ICompanyCard) => {
@@ -12,7 +14,11 @@ export const CompanyCard = ({ companyLogo, companyName, companyDescription }: IC
                 <Text weight="semibold" className="mb-1 text-sm lg:text-base">{companyName}</Text>
                 <Text size="xs" color="muted">{companyDescription}</Text>
             </div>
-            <IconButton variant="secondary" size="xs" shape="circle"><Image src={plusIcon} /></IconButton>
+            <IconButton variant="secondary" size="xs" shape="circle">
+                <Image src={plusIcon} className="hidden lg:block" />
+                <Image src={plusIconMobile} className="hidden sm:block lg:hidden" />
+                <Image src={plusIconTablet} className="block sm:hidden" />
+            </IconButton>
         </div>
     )
 }
