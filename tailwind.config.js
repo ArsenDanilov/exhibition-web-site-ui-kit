@@ -8,6 +8,7 @@ export default {
         sans: ["Montserrat", "system-ui", "sans-serif"],
       },
       fontSize: {
+        xxs: "var(--text-xxs)",
         xs: "var(--text-xs)",
         sm: "var(--text-sm)",
         base: "var(--text-base)",

@@ -28,7 +28,7 @@ export const SessionCard = ({
             sessionTags.map((tag, index) => (
               <div
                 key={index}
-                className="bg-lightGrey text-darkGrey rounded-full text-xs px-3 py-[1px] flex justify-center items-center"
+                className="bg-lightGrey text-darkGrey rounded-full text-xxs px-2 py-1 sm:px-2 lg:px-3 flex justify-center items-center"
               >
                 {tag}
               </div>

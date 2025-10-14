@@ -90,6 +90,7 @@
     --block-margin: 20px;
 
     /* Mobile text sizes (base) */
+    --text-xxs: 0.625rem;    /* 10px */
     --text-xs: 0.75rem;    /* 12px */
     --text-sm: 0.8125rem;  /* 13px */
     --text-base: 0.875rem; /* 14px */
@@ -102,6 +103,7 @@
   @screen sm {
     :root {
       /* Tablet text sizes */
+      --text-xxs: 0.5rem;    /* 8px */
       --text-xs: 0.75rem;    /* 12px */
       --text-sm: 0.8125rem;  /* 13px */
       --text-base: 0.875rem; /* 14px */
@@ -115,6 +117,7 @@
   @screen lg {
     :root {
       /* Desktop text sizes */
+      --text-xxs: 0.625rem;    /* 10px */
       --text-xs: 0.75rem;    /* 12px */
       --text-sm: 0.8125rem;  /* 13px */
       --text-base: 0.875rem; /* 14px */
