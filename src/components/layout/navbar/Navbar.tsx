@@ -1,11 +1,16 @@
 import { MobileNavbar } from './MobileNavbar';
 import { DesktopNavbar } from './DesktopNavbar';
 import type {EditableComponent} from "../../../types";
+import bag from "@/assets/bag.svg";
+import chat from "@/assets/chat.svg";
+import document from "@/assets/document.svg";
+import megaphone from "@/assets/megaphone.svg";
 
 
 export interface NavbarLink  {
     text: string,
     href: string,
+    icon?: string,
 }
 
 interface NavbarProps {
@@ -26,12 +31,12 @@ Navbar.schema = {
     type: 'Navbar',
     getDefaultProps: () => ({
         links: [
-            { text: "Connect", href: "/connect" },
-            { text: "News", href: "/news" },
-            { text: "Sessions", href: "/sessions" },
-            { text: "Members", href: "/members" },
-            { text: "Products", href: "/products" },
-            { text: "Companies", href: "/companies" },
+            { text: "Connect", href: "/connect", icon: bag },
+            { text: "News", href: "/news", icon: chat },
+            { text: "Sessions", href: "/sessions", icon: document },
+            { text: "Members", href: "/members", icon: megaphone },
+            { text: "Products", href: "/products", icon: bag },
+            { text: "Companies", href: "/companies", icon: chat },
         ]
     })
 }

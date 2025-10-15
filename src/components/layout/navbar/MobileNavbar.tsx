@@ -11,6 +11,8 @@ import { Button } from "@/components/ui/Button";
 import navbarMenuArrow from "@/assets/navbarMenuArrow.svg";
 import { Link } from "@/components/ui/Link";
 import type { NavbarLink } from "./Navbar";
+import { Image } from "@/components/ui/Image";
+import { IconButton } from "@/components/ui/IconButton";
 
 export const MobileNavbar = ({ links }: { links: NavbarLink[] }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -38,7 +40,10 @@ export const MobileNavbar = ({ links }: { links: NavbarLink[] }) => {
                 size="sm"
                 className="w-full flex justify-between items-center px-4 py-3 hover:bg-gray-200 rounded-lg transition-colors"
               >
-                {link.text}
+                <div className="flex items-center gap-3">
+                  {link.icon && <IconButton variant="muted"><Image src={link.icon} alt="link icon" /></IconButton>}
+                  {link.text}
+                </div>
                 <img src={navbarMenuArrow} alt="navbar menu arrow" />
               </Link>
             ))}
