@@ -10,6 +10,7 @@ const linkVariants = cva(
                 default: "text-black70 hover:text-black",
                 muted: "text-black30 hover:text-black70",
                 primary: "text-primary font-semibold hover:text-primary/80",
+                active: "text-black",
                 unstyled: "",
             },
             size: {
