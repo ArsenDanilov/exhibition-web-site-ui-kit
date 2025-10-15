@@ -27,9 +27,9 @@ export const MobileNavbar = ({ links }: { links: NavbarLink[] }) => {
         <SheetOverlay className="bg-red-500" asChild/>
         <SheetContent
           side="top"
-          className="rounded-xl py-1 mx-auto px-7"
+          className="rounded-xl p-3 mx-auto mx-4"
         >
-          <div className="mb-5 bg-background rounded-2xl">
+          <div className="mb-5 bg-background rounded-2xl border border-black12">
             {links.map((link) => (
               <Link
                 key={link.href}
